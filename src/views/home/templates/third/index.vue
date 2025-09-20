@@ -10,9 +10,9 @@
                 <img src="@/assets/icons/third/ecosystem.svg" alt="">
                 <p class="num_info">$1.2B</p>
                 <p class="p_info">Evaluation of startup ecosystem</p>
-            </div>
+            </div> 
             <div class="grid4">
-                <div class="box">
+                <div class="box"> 
                     <p class="num_info">1200+</p>
                     <p class="p_info fs20">Startups participated in local acceleration programs</p>
                 </div>
