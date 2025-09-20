@@ -1,0 +1,22 @@
+/* @keyframes fadeScaleInOut {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  20% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  80% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+}
+
+.animate-fade-scale {
+  animation: fadeScaleInOut 6s ease-out forwards;
+} */

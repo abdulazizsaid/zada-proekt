@@ -1,8 +1,8 @@
 <template>
-    <div class="flex w-full gap-5">
+    <div class="flex w-full h-[892px] gap-5">
         <div class=" max-w-[33%] w-full bg-[#151F07] rounded-[40px] p-[40px]">
             <p class="text-[36px]">Number of Members</p>
-            <DonutRingChart title="2999" :regions="['Tashkent', 'Regions']" :data="[2202, 2344]" :keys="[1, 2]"
+            <DonutRingChart title="2999" :regions="['Tashkent', 'Regions']" :data="[1870, 1129]" :keys="[1, 2]"
                 :colors="['#7DBA28', '#F16E16', '#FF9800', '#03A9F4', '#9C27B0']" height="290" link="/" />
             <h2 class="text-[36px]">Member Companies Activities</h2>
             <Linechart :data="[
@@ -15,7 +15,7 @@
         </div>
         <div class="max-w-[33%] w-full bg-[#151F07] rounded-[40px] p-[40px]">
             <p class="text-[36px]">Number of Foreign Companies</p>
-            <DonutRingChart title="2999" :regions="['Tashkent', 'Regions']" :data="[2202, 2344]" :keys="[1, 2]"
+            <DonutRingChart title="800" :regions="['Tashkent', 'Regions']" :data="[586, 214]" :keys="[1, 2]"
                 :colors="['#7DBA28', '#F16E16', '#FF9800', '#03A9F4', '#9C27B0']" height="290" link="/" />
             <h2 class="text-[36px]">Foreign Companies Activities</h2>
             <Linechart :data="[
@@ -43,9 +43,6 @@
             ]" />
             <Regioncard />
         </div>
-    </div>
-    <div>
-
     </div>
 </template>
 

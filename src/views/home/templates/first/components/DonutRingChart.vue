@@ -2,7 +2,8 @@
   <div class="chart-container flex items-center">
     <highcharts class="donut-chart" :options="chartOptions"></highcharts>
     <div>
-      <p class="text-[30px]" :class="`text-[${colors[index]}]`" v-for="(item, index) in data" :key="index">{{ item }}</p>
+      <p class="text-[30px]" :class="`text-[${colors[index]}]`" v-for="(item, index) in data" :key="index">{{ item }}
+      </p>
     </div>
   </div>
 </template>
@@ -63,7 +64,7 @@ const chartOptions = computed(() => ({
     height: props.height,
   },
   title: {
-    text: `<p style="font-size: 36px; font-weight: bold; color: #7DBA28; padding-left: ${35}px; padding-top: 0px; text-align:center; position: relative; z-index: 10"; >${formattedTitle.value}</p>`,
+    text: `<p style="font-size: 36px; font-weight: bold; color: #7DBA28; padding-left: ${24}px; padding-top: 0px; text-align:center; position: relative; z-index: 10"; >${formattedTitle.value}</p>`,
     align: 'left',
     verticalAlign: 'middle',
     className: "my-custom-title",
@@ -76,12 +77,16 @@ const chartOptions = computed(() => ({
   },
   plotOptions: {
     pie: {
-      innerSize: "70%", // ichini bo‘sh qilib donut qiladi
+      innerSize: "60%", // ichini bo‘sh qilib donut qiladi
+      size: '110%',   
       allowPointSelect: true,
+      slicedOffset: 10,
       cursor: "pointer",
       dataLabels: {
         enabled: false,
       },
+      margin:10,
+      borderWidth: 0,
       showInLegend: true,
     },
   },
@@ -92,6 +97,7 @@ const chartOptions = computed(() => ({
     layout: "vertical",
     align: "right",
     verticalAlign: "middle",
+    width: '45%',
     itemStyle: {
       fontSize: "30px",
       fontWeight: "500",
@@ -114,29 +120,21 @@ const chartOptions = computed(() => ({
   ],
 }));
 </script>
-<style scoped>
+<style >
 .chart-container {
   width: 100%;
   padding: 0;
 }
 
 .donut-chart .highcharts-title {
-  font-size: 18px;
+  left: 30px !important;
+  width: 144px;
   font-weight: bold;
-  text-align: center;
-  pointer-events: none;
-  color: #FFFFFF;
-}
+  transform: scale(1, 1);
+  z-index: -1;
 
-.chart-title {
-  display: inline-block;
-  max-width: 120px;
-  line-height: 20px;
-  font-size: 16px;
-  color: #FFFFFF;
-}
-
-.title-color {
-  color: #FFFFFF;
+  p {
+    z-index: -1 !important;
+  }
 }
 </style>

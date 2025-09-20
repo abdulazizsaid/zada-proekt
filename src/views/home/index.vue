@@ -1,10 +1,60 @@
-
-
 <template>
-    <First/>
+    <div class="w-full h-[892px] flex items-center justify-center">
+        <Transition name="fade-scale" mode="out-in">
+            <component :is="currentComponent" :key="currentIndex" />
+        </Transition>
+    </div>
 </template>
 
 <script setup>
-import First from './templates/first/index.vue';
+import { ref, computed, onMounted, onBeforeUnmount, Transition } from "vue";
 
+// componentlar import qilinadi
+import First from "./templates/first/index.vue";
+import Second from "./templates/second/index.vue";
+import Third from "./templates/third/index.vue";
+import Fourth from "./templates/fourth/index.vue";
+
+const components = [First, Second, Third, Fourth];
+const currentIndex = ref(0);
+const currentComponent = computed(() => components[currentIndex.value]);
+
+let interval;
+
+onMounted(() => {
+    interval = setInterval(() => {
+        currentIndex.value = (currentIndex.value + 1) % components.length;
+    }, 2000); // har 6 sekundda almashadi
+});
+
+onBeforeUnmount(() => {
+    clearInterval(interval);
+});
 </script>
+
+<style scoped>
+.fade-scale-enter-active,
+.fade-scale-leave-active {
+    transition: all 0.8s ease;
+}
+
+.fade-scale-enter-from {
+    opacity: 0;
+    transform: scale(0.8);
+}
+
+.fade-scale-enter-to {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.fade-scale-leave-from {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.fade-scale-leave-to {
+    opacity: 0;
+    transform: scale(0.8);
+}
+</style>
