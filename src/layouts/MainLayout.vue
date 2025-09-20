@@ -2,7 +2,7 @@
   <!-- start #mainWrap-->
   <div id="mainWrap">
     <Header />
-    <div class="container mx-auto w-full">
+    <div class="w-full p-10">
         <router-view />
     </div>
     <!-- <Footer /> -->
