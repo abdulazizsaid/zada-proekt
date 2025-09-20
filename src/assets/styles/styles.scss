@@ -1,0 +1,28 @@
+// font-family: 'Inter-Black';
+// font-family: 'Inter-Bold';
+// font-family: 'Inter-ExtraBold';
+// font-family: 'Inter-ExtraLight';
+// font-family: 'Inter-Light';
+// font-family: 'Inter-Medium';
+// font-family: 'Inter-Regular';
+// font-family: 'Inter-SemiBold';
+// font-family: 'Inter-Thin';
+@import "./layout.scss";
+@import "./elements.scss";
+
+@for $i from 12 through 40 {
+  .fs#{$i} {
+    font-size: $i + px !important;
+  }
+}
+
+@for $i from 1 through 10 {
+  .opacity-#{$i} {
+    opacity: $i/10;
+  }
+}
+
+#mainWrap {
+  background-color: #010200;
+  padding-top: 90px;
+}
