@@ -1,6 +1,9 @@
 <template>
-  <div class="chart-container">
+  <div class="chart-container flex items-center">
     <highcharts class="donut-chart" :options="chartOptions"></highcharts>
+    <div>
+      <p class="text-[30px]" :class="`text-[${colors[index]}]`" v-for="(item, index) in data" :key="index">{{ item }}</p>
+    </div>
   </div>
 </template>
 <script setup>
@@ -60,9 +63,15 @@ const chartOptions = computed(() => ({
     height: props.height,
   },
   title: {
-    text: `${formattedTitle.value}`,
-    align: "center",
-    verticalAlign: "middle",
+    text: `<p style="font-size: 36px; font-weight: bold; color: #7DBA28; padding-left: ${35}px; padding-top: 0px; text-align:center; position: relative; z-index: 10"; >${formattedTitle.value}</p>`,
+    align: 'left',
+    verticalAlign: 'middle',
+    className: "my-custom-title",
+    style: {
+      color: '#4CAF50',
+      fontWeight: 'bold',
+    },
+    x: 31,
     useHTML: true,
   },
   plotOptions: {
@@ -84,13 +93,13 @@ const chartOptions = computed(() => ({
     align: "right",
     verticalAlign: "middle",
     itemStyle: {
-      fontSize: "14px",
+      fontSize: "30px",
       fontWeight: "500",
-      color: "#FFFFFF",
+      color: "#D1EDAA",
     },
-    symbolRadius: 6,
-    symbolHeight: 12,
-    symbolWidth: 12,
+    symbolRadius: 16,
+    symbolHeight: 22,
+    symbolWidth: 22,
   },
   series: [
     {
