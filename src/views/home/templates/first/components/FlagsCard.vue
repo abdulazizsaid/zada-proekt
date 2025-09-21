@@ -1,17 +1,16 @@
 <template>
-  <div class="bg-[#151F07] rounded-[40px] w-full h-1/2 overflow-hidden">
+  <div class="bg-[#151F07] rounded-[40px] w-full overflow-hidden">
     <div class="p-[40px]">
       <p class="text-[#D1EDAA] text-[24px]">Foreign members from</p>
       <h2 class="text-[#7DBA28] text-[48px] font-bold mb-4">
         {{ total }} countries
       </h2>
     </div>
-    <div class="relative w-full h-[426px]">
-      <div class="absolute -bottom-22 w-[546px] h-[426px] overflow-hidden">
+    <div class="relative w-full h-[216px]">
+      <div class="w-[590px] h-[216px] overflow-hidden">
         <!-- scrolling container -->
-        <div class="grid grid-cols-26 grid-rows-3 gap-3 animate-scroll overflow-hidden w-44 ">
-          <!-- flaglar ikki marta duplicat qilinadi -->
-          <div v-for="(flag, index) in duplicatedFlags" :key="index" class="w-[89.64263153076172px] h-[58.73245620727539px] shrink-0">
+        <div class="grid grid-cols-26 grid-rows-3 gap-3 animate-scroll overflow-hidden w-44">
+          <div v-for="(flag, index) in duplicatedFlags" :key="index" class="w-[90px] h-[60px] shrink-0">
             <img :src="flag" alt="flag" class="w-full h-full object-cover rounded" />
           </div>
         </div>

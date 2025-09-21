@@ -157,7 +157,6 @@ export default {
 
 <style scoped>
 #map-container {
-  height: 80%;
   width: 100%;
   color: #fff;
   text-align: center;

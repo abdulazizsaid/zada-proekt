@@ -2,13 +2,11 @@
   <!-- start #mainWrap-->
   <div id="mainWrap" class="bg-[#010200]">
     <div class="mx-auto innitialed-cont">
-      <div class="w-full px-10 py-8 ">
+      <div class="w-full p-8 ">
         <router-view />
       </div>
-      <!-- <Footer /> -->
     </div>
   </div>
-  <!-- end #mainWrap-->
 </template>
 
 <script setup></script>
