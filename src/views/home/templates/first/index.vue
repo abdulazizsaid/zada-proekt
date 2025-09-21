@@ -19,11 +19,11 @@
                 :colors="['#7DBA28', '#F16E16', '#FF9800', '#03A9F4', '#9C27B0']" height="290" link="/" />
             <h2 class="text-[36px]">Foreign Companies Activities</h2>
             <Linechart :data="[
-                { name: 'IT Services', value: 1341 },
-                { name: 'BPO and services', value: 580 },
-                { name: 'Education', value: 502 },
-                { name: 'SaaS Service', value: 496 },
-                { name: 'GameDev & Design', value: 145 },
+                { name: 'IT Services', value: 396 },
+                { name: 'SaaS Service', value: 183 },
+                { name: 'BPO and services', value: 148 },
+                { name: 'GameDev & Design', value: 50 },
+                { name: 'Education', value: 38 },
             ]" />
         </div>
         <div class="flex flex-col gap-8  max-w-[33%] w-full">

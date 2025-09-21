@@ -30,7 +30,7 @@
 
                 </div>
                 <Linechart :data="[
-                    { name: 'Asia-Pacific & CIS', value: 289 },
+                    { name: 'Asia-Pacific & CIS', value: 294 },
                     { name: 'America', value: 189 },
                     { name: 'EU & UK', value: 189 },
                     { name: 'MENA', value: 78 },
