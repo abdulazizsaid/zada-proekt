@@ -64,7 +64,7 @@ const chartOptions = computed(() => ({
     height: props.height,
   },
   title: {
-    text: `<p style="font-size: 36px; font-weight: bold; color: #7DBA28; padding-left: ${24}px; padding-top: 0px; text-align:center; position: relative; z-index: 10"; >${formattedTitle.value}</p>`,
+    text: `<p style="font-size: 36px; font-weight: bold; color: #7DBA28; padding-left: ${50}px; padding-top: -4px; text-align:center; position: relative; z-index: 10"; >${formattedTitle.value}</p>`,
     align: 'left',
     verticalAlign: 'middle',
     className: "my-custom-title",
@@ -128,7 +128,7 @@ const chartOptions = computed(() => ({
 
 .donut-chart .highcharts-title {
   left: 30px !important;
-  width: 144px;
+  width: 154px;
   font-weight: bold;
   transform: scale(1, 1);
   z-index: -1;

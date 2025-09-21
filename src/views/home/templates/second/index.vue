@@ -37,8 +37,8 @@
                 ]" />
             </div>
 
-            <div class="max-w-[27.5%] min-w-[25%] w-full flex flex-col gap-8">
-                <div class="w-full bg-[#151F07] rounded-[40px] p-8 box blur-green rt-blur-green">
+            <div class="max-w-[27.5%] min-w-[25%] w-full flex flex-col gap-6">
+                <div class="w-full bg-[#151F07] rounded-[40px] p-[30px] h-[288px] box blur-green rt-blur-green">
                     <div class="flex justify-between">
                         <div>
                             <h2 class="title3 mb-11">Export Сoverage</h2>

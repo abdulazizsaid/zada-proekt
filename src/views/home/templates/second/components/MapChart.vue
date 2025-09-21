@@ -1,6 +1,5 @@
 <template>
   <div id="map-container">
-    <div v-if="loading" class="loading-indicator">Loading map...</div>
     <highcharts v-if="!loading" :options="chartOptions" :constructor-type="'mapChart'"></highcharts>
   </div>
 </template>
@@ -12,159 +11,125 @@ import HC_map from "highcharts/modules/map";
 import mapData from "@/data/geo.json";
 
 
-// Highcharts global sozlamalari
-Highcharts.setOptions({
-  lang: {
-    decimalPoint: ".",
-    thousandsSep: ",",
-  },
-});
-
 // Map modulini ulash
 if (typeof HC_map === "function") {
   HC_map(Highcharts);
 }
-
-// const vm = this
 
 export default {
   name: "WorldMapChart",
   components: {
     highcharts: HighchartsVue.component,
   },
-  props: {
-    title: {
-      type: String,
-      required: true,
-    },
-    data: {
-      type: Array,
-      required: true,
-    },
-  },
   data() {
     return {
-      chartOptions: null,
       loading: true,
-      localTitle: this.title, // propsni data ga tarjima qilib olish
-      locaData: null
-    }
-  },
-  methods: {
-    async fetchMapData() {
-      try {
-        this.chartOptions = {
-          chart: {
-            map: mapData,
-            backgroundColor: "transparent",
-          },
-          title: {
-            text: this.localTitle,
-            style: { color: "#fff" },
-          },
-          mapNavigation: {
-            enabled: true,
-            buttonOptions: {
-              verticalAlign: "bottom",
-            },
-          },
-          colorAxis: {
-            min: 0,
-            minColor: "#5cbd5e",
-            maxColor: "#014501",
-          },
-          series: [
-          // America (orange)
-          {
-            name: "America",
-            mapData,
-            data: [
-              ["us", 1],
-              ["ca", 1],
-              ["mx", 1],
-              ["br", 1],
-              // kerakli boshqa kodlar
-            ],
-            joinBy: "hc-key",
-            color: "#E67E22",
-          },
-          // Asia-Pacific & CIS (green)
-          {
-            name: "Asia-Pacific & CIS",
-            mapData,
-            data: [
-              ["cn", 1],
-              ["ru", 1],
-              ["jp", 1],
-              ["in", 1],
-              // kerakli boshqa kodlar
-            ],
-            joinBy: "hc-key",
-            color: "#6EB52D",
-          },
-          // EU & UK (purple)
-          {
-            name: "EU & UK",
-            mapData,
-            data: [
-              ["fr", 1],
-              ["de", 1],
-              ["gb", 1],
-              ["it", 1],
-              // kerakli boshqa kodlar
-            ],
-            joinBy: "hc-key",
-            color: "#F16E16",
-          },
-          // MENA (blue)
-          {
-            name: "MENA",
-            mapData,
-            data: [
-              ["ae", 1],
-              ["sa", 1],
-              ["eg", 1],
-              ["dz", 1],
-              // kerakli boshqa kodlar
-            ],
-            joinBy: "hc-key",
-            color: "#1CA9C9",
-          },
-        ],
-        };
-        this.loading = false;
-      } catch (error) {
-        console.error("Failed to load map data:", error);
-      }
-    },
+      chartOptions: null,
+    };
   },
   mounted() {
-    this.fetchMapData();
+    this.loadMap();
   },
-  watch: {
-    data(newValue) {
-      this.locaData = newValue;
-      console.log(newValue);
+  methods: {
+    loadMap() {
+      this.chartOptions = {
+        chart: {
+          map: mapData,
+          backgroundColor: "#151F07",
+        },
+        title: { text: "" },
+        legend: { enabled: false },
+        tooltip: {
+          pointFormat: "{point.name}",
+        },
+        mapView: {
+          projection: {
+            name: 'Miller', // tekisroq ko‘rsatadi
+          }
+        },
 
-      if (this.chartOptions && this.chartOptions.series && this.chartOptions.series[0]) {
-        this.chartOptions.series[0].data = newValue;
-      }
+        series: [
+          {
+            type: "mapline",
+            mapData: Highcharts.geojson(mapData, "mapline"),
+            nullColor: "#707070",
+            enableMouseTracking: false,
+          },
+          {
+            mapData,
+            joinBy: "hc-key",
+            borderWidth: 0,
+            data: [
+              { "hc-key": "us", value: 1, color: "#E67E22" },
+              { "hc-key": "ca", value: 1, color: "#E67E22" },
+              { "hc-key": "mx", value: 1, color: "#E67E22" },
+              { "hc-key": "br", value: 1, color: "#E67E22" },
+
+              { "hc-key": "ru", value: 1, color: "#7DBA28" },
+              { "hc-key": "cn", value: 1, color: "#7DBA28" },
+              { "hc-key": "in", value: 1, color: "#7DBA28" },
+              { "hc-key": "jp", value: 1, color: "#7DBA28" },
+              { "hc-key": "au", value: 1, color: "#7DBA28" },
+              { "hc-key": "sg", value: 1, color: "#7DBA28" },
+              // { "hc-key": "np", value: 1, color: "#7DBA28" },
+              { "hc-key": "uz", value: 1, color: "#7DBA28" },
+              { "hc-key": "kz", value: 1, color: "#7DBA28" },
+              { "hc-key": "tj", value: 1, color: "#7DBA28" },
+              { "hc-key": "kr", value: 1, color: "#7DBA28" },
+              { "hc-key": "ir", value: 1, color: "#7DBA28" },
+              { "hc-key": "iq", value: 1, color: "#7DBA28" },
+              { "hc-key": "tm", value: 1, color: "#7DBA28" },
+              { "hc-key": "af", value: 1, color: "#7DBA28" },
+              { "hc-key": "pk", value: 1, color: "#7DBA28" },
+              { "hc-key": "kg", value: 1, color: "#7DBA28" },
+              { "hc-key": "my", value: 1, color: "#7DBA28" },
+              { "hc-key": "id", value: 1, color: "#7DBA28" },
+              { "hc-key": "nz", value: 1, color: "#7DBA28" },
+              { "hc-key": "az", value: 1, color: "#7DBA28" },
+              { "hc-key": "ge", value: 1, color: "#7DBA28" },
+              { "hc-key": "am", value: 1, color: "#7DBA28" },
+              { "hc-key": "bt", value: 1, color: "#7DBA28" },
+              { "hc-key": "vn", value: 1, color: "#7DBA28" },
+
+              { "hc-key": "tr", value: 1, color: "#8979FF" },
+              { "hc-key": "gb", value: 1, color: "#8979FF" },
+              { "hc-key": "fr", value: 1, color: "#8979FF" },
+              { "hc-key": "de", value: 1, color: "#8979FF" },
+              { "hc-key": "it", value: 1, color: "#8979FF" },
+              { "hc-key": "pr", value: 1, color: "#8979FF" },
+              { "hc-key": "ro", value: 1, color: "#8979FF" },
+              { "hc-key": "md", value: 1, color: "#8979FF" },
+              { "hc-key": "ua", value: 1, color: "#8979FF" },
+              { "hc-key": "by", value: 1, color: "#8979FF" },
+              { "hc-key": "il", value: 1, color: "#8979FF" },
+              { "hc-key": "ch", value: 1, color: "#8979FF" },
+              { "hc-key": "no", value: 1, color: "#8979FF" },
+              { "hc-key": "se", value: 1, color: "#8979FF" },
+              { "hc-key": "ie", value: 1, color: "#8979FF" },
+              { "hc-key": "is", value: 1, color: "#8979FF" },
+              { "hc-key": "es", value: 1, color: "#8979FF" },
+              { "hc-key": "nl", value: 1, color: "#8979FF" },
+              { "hc-key": "pl", value: 1, color: "#8979FF" },
+              { "hc-key": "cz", value: 1, color: "#8979FF" },
+              { "hc-key": "sk", value: 1, color: "#8979FF" },
+              { "hc-key": "rs", value: 1, color: "#8979FF" },
+              { "hc-key": "hu", value: 1, color: "#8979FF" },
+
+              { "hc-key": "sa", value: 1, color: "#1CA9C9" },
+              { "hc-key": "eg", value: 1, color: "#1CA9C9" },
+              { "hc-key": "ae", value: 1, color: "#1CA9C9" },
+            ],
+          },
+        ],
+      };
+      this.loading = false;
     },
   },
-}
+};
 </script>
-
 
 <style scoped>
 #map-container {
   width: 100%;
-  color: #fff;
-  text-align: center;
-}
-
-.loading-indicator {
-  font-size: 16px;
-  font-weight: bold;
-  color: #fff;
 }
 </style>
