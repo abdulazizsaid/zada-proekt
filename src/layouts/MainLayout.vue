@@ -2,7 +2,6 @@
   <!-- start #mainWrap-->
   <div id="mainWrap" class="bg-[#010200]">
     <div class="mx-auto innitialed-cont">
-      <Header />
       <div class="w-full px-10 py-8 ">
         <router-view />
       </div>
@@ -12,10 +11,7 @@
   <!-- end #mainWrap-->
 </template>
 
-<script setup>
-
-import Header from '@/shared/components/templates/header/index.vue'
-</script>
+<script setup></script>
 
 <style>
 :root {

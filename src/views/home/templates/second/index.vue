@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="flex w-full gap-5 mb-6">
+        <div class="flex w-full gap-8 mb-8">
             <div class="max-w-[40%] min-w-[45%] w-full bg-[#151F07] rounded-[40px] p-[40px]">
                 <p class="text-[36px] mb-3 font-bold">Export Geography</p>
                 <MapChart />
@@ -22,7 +22,7 @@
                 class="max-w-[27.5%] min-w-[25%] w-full bg-[#151F07] rounded-[40px] p-[40px] box blur-green rt-blur-green">
                 <div class="flex justify-between mb-16">
                     <div>
-                        <h2 class="text-[36px] text-[#D1EDAA]">Number <br> of Exporters</h2>
+                        <h2 class="text-[36px] text-[#D1EDAA] whitespace-nowrap">Number <br> of Exporters</h2>
                         <p class="text-[48px] text-[#7DBA28] font-bold">750</p>
                     </div>
                     <img class="w-[139.35943603515625px] h-[167.9999542236328]" src="@/assets/icons/second/globe.svg"
@@ -37,17 +37,17 @@
                 ]" />
             </div>
 
-            <div class="max-w-[27.5%] min-w-[25%] w-full flex flex-col gap-6">
-                <div class="w-full bg-[#151F07] rounded-[40px] p-[30px] h-[258px] box blur-green rt-blur-green">
+            <div class="max-w-[27.5%] min-w-[25%] w-full flex flex-col gap-8">
+                <div class="w-full bg-[#151F07] rounded-[40px] p-8 box blur-green rt-blur-green">
                     <div class="flex justify-between">
                         <div>
-                            <h2 class="text-[30px] text-[#D1EDAA] mb-10">Export Сoverage</h2>
+                            <h2 class="text-[30px] text-[#D1EDAA] mb-11">Export Сoverage</h2>
                             <p class="text-[48px] text-[#7DBA28] font-bold leading-none">90</p>
                             <p class="text-[48px] text-[#7DBA28] font-bold leading-none">countries</p>
                         </div>
                     </div>
                 </div>
-                <div class="w-full bg-[#151F07] rounded-[40px] p-[30px] h-[307px] box blur-green lt-blur-green">
+                <div class="w-full bg-[#151F07] rounded-[40px] p-8 box blur-green lt-blur-green">
                     <div class="flex justify-between mb-16">
                         <div>
                             <img class="w-[112px] h-[126px] mb-6" src="@/assets/icons/second/lines.svg" alt="">
@@ -74,7 +74,7 @@
 
 <script setup>
 import Linechart from '../first/components/linechart.vue';
-import MapChart from './components/mapChart.vue';
+import MapChart from './components/MapChart.vue';
 import { ref } from 'vue'
 
 const regions = [

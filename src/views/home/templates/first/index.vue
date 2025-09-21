@@ -1,5 +1,5 @@
 <template>
-    <div class="flex w-full gap-5">
+    <div class="flex w-full gap-8">
         <div class=" max-w-[33%] min-w-[33%] w-full bg-[#151F07] rounded-[40px] p-[40px]">
             <p class="text-[36px]">Number of Members</p>
             <DonutRingChart title="2999" :regions="['Tashkent', 'Regions']" :data="[1870, 1129]" :keys="[1, 2]"
@@ -26,7 +26,7 @@
                 { name: 'GameDev & Design', value: 145 },
             ]" />
         </div>
-        <div class="flex flex-col gap-6  max-w-[33%] w-full">
+        <div class="flex flex-col gap-8  max-w-[33%] w-full">
             <FlagsCard :total="64" :flags="flags" />
             <Regioncard />
         </div>

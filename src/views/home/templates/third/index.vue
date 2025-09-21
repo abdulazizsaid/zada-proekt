@@ -3,12 +3,12 @@
         <div class="w-full space-y-[32px]">
             <section class="flex space-x-[32px]">
                 <div class="box blur-green lt-blur-green">
-                    <img src="@/assets/icons/third/world_rate.svg" alt="">
+                    <img class="h-[140px]" src="@/assets/icons/third/world_rate.svg" alt="">
                     <p class="num_info">#2</p>
                     <p class="p_info">In the world <br /> by growth rate</p>
                 </div>
                 <div class="box blur-green lt-blur-green">
-                    <img src="@/assets/icons/third/ecosystem.svg" alt="">
+                    <img class="h-[140px]" src="@/assets/icons/third/ecosystem.svg" alt="">
                     <p class="num_info">$1.2B</p>
                     <p class="p_info">Evaluation of startup <br /> ecosystem</p>
                 </div>
