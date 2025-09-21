@@ -1,6 +1,6 @@
 <template>
     <div class="flex w-full gap-5">
-        <div class=" max-w-[33%] w-full bg-[#151F07] rounded-[40px] p-[40px]">
+        <div class=" max-w-[33%] min-w-[33%] w-full bg-[#151F07] rounded-[40px] p-[40px]">
             <p class="text-[36px]">Number of Members</p>
             <DonutRingChart title="2999" :regions="['Tashkent', 'Regions']" :data="[1870, 1129]" :keys="[1, 2]"
                 :colors="['#7DBA28', '#F16E16', '#FF9800', '#03A9F4', '#9C27B0']" height="290" link="/" />

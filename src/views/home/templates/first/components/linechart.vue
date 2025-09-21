@@ -3,7 +3,7 @@
         <div v-for="(item, index) in data" :key="index" class="flex items-end justify-between gap-6">
             <!-- Chap tomonda nom va progress bar -->
             <div class="flex-1 mr-4">
-                <p class="text-gray-200 text-[24px] font-medium">{{ item.name }}</p>
+                <p class="text-[#D1EDAA] text-[24px] font-medium">{{ item.name }}</p>
                 <div
                     class="w-full h-[27px] rounded-sm overflow-hidden mt-1">
                     <div class="h-full rounded-sm transition-all duration-500"
