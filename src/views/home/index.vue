@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full flex items-center justify-center min-h-[1040px]">
+    <div class="w-full flex items-center justify-center min-h-[100dvh_-_114px]">
         <Transition name="fade-scale" mode="out-in">
             <component :is="currentComponent" :key="currentIndex" />
         </Transition>
@@ -16,15 +16,15 @@ import Third from "./templates/third/index.vue";
 import Fourth from "./templates/fourth/index.vue";
 
 const components = [First, Second, Third, Fourth];
-const currentIndex = ref(0);
+const currentIndex = ref(3);
 const currentComponent = computed(() => components[currentIndex.value]);
 
 let interval;
 
 onMounted(() => {
-    interval = setInterval(() => {
-        currentIndex.value = (currentIndex.value + 1) % components.length;
-    }, 5000); // har 6 sekundda almashadi
+    // interval = setInterval(() => {
+    //     currentIndex.value = (currentIndex.value + 1) % components.length;
+    // }, 5000); // har 6 sekundda almashadi
 });
 
 onBeforeUnmount(() => {

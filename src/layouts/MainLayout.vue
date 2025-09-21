@@ -3,7 +3,7 @@
   <div id="mainWrap" class="bg-[#010200]">
     <div class="mx-auto innitialed-cont">
       <Header />
-      <div class="w-full px-10 py-6 ">
+      <div class="w-full px-10 py-8 ">
         <router-view />
       </div>
       <!-- <Footer /> -->
