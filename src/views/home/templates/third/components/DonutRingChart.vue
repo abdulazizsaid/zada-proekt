@@ -1,6 +1,5 @@
 <template>
     <div class="chart-container flex flex-col items-center">
-        <!-- {{ icons[0] }} -->
         <highcharts ref="chartRef" class="donut-chart" :options="chartOptions" @rendered="onChartRendered"></highcharts>
         <!-- Legend with icons -->
         <div class="legend flex flex-col gap-4 mt-2">
