@@ -1,10 +1,7 @@
 <template>
     <div class="w-full flex items-center justify-center min-h-[100dvh_-_104px]">
         <Transition name="fade-scale" mode="out-in">
-            <div>
-                <Header :title="currentIndex == 3 ? 'IT Park Programs and Infrastructure' : 'Uzbekistan – Central Asia’s fastest growing ecosystem'" />
-                <component class="min-h-[100dvh_-_104px] min-w-[1946px]" :is="currentComponent" :key="currentIndex" />
-            </div>
+            <component class="min-h-[100dvh_-_104px] min-w-[1946px]" :is="currentComponent" :key="currentIndex" />
         </Transition>
     </div>
 </template>
@@ -12,7 +9,6 @@
 <script setup>
 import { ref, computed, onMounted, onBeforeUnmount, Transition } from "vue";
 
-import Header from '@/shared/components/templates/header/index.vue'
 // componentlar import qilinadi
 import First from "./templates/first/index.vue";
 import Second from "./templates/second/index.vue";
@@ -28,7 +24,7 @@ let interval;
 onMounted(() => {
     interval = setInterval(() => {
         currentIndex.value = (currentIndex.value + 1) % components.length;
-    }, 20000); // har 6 sekundda almashadi
+    }, 15000); // har 6 sekundda almashadi
 });
 
 onBeforeUnmount(() => {
@@ -62,3 +58,4 @@ onBeforeUnmount(() => {
     transform: scale(0.8);
 }
 </style>
+ 
