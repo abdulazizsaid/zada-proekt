@@ -1,5 +1,5 @@
 <template>
-    <div class="flex w-full gap-8">
+    <div class="flex w-full gap-8 h-[900px]">
         <div class=" max-w-[33%] min-w-[33%] w-full bg-[#151F07] rounded-[40px] p-[40px]">
             <p class="text-[36px]">Number of Members</p>
             <DonutRingChart title="2999" :regions="['Tashkent', 'Regions']" :data="[1870, 1129]" :keys="[1, 2]"
