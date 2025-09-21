@@ -1,19 +1,16 @@
 <template>
   <div class="bg-[#151F07] rounded-[40px] w-full overflow-hidden">
-    <div class="p-[40px]">
-      <p class="text-[#D1EDAA] text-[24px]">Foreign members from</p>
-      <h2 class="text-[#7DBA28] text-[48px] font-bold mb-4">
+    <div class="p-[40px] pb-[80px]">
+      <p class="p_info">Foreign members from</p>
+      <h2 class="num_info mb-4">
         {{ total }} countries
       </h2>
     </div>
     <div class="relative w-full h-[216px]">
-      <div class="w-[590px] h-[216px] overflow-hidden">
-        <!-- scrolling container -->
-        <div class="grid grid-cols-26 grid-rows-3 gap-3 animate-scroll overflow-hidden w-44">
-          <div v-for="(flag, index) in duplicatedFlags" :key="index" class="w-[90px] h-[60px] shrink-0">
-            <img :src="flag" alt="flag" class="w-full h-full object-cover rounded" />
-          </div>
-        </div>
+      <div class="w-[476px] h-[216px] space-y-[20px] overflow-hidden">
+        <BrandCarousel :direction="'left'" :brands="flags" />
+        <BrandCarousel :direction="'right'" :brands="flags" />
+        <BrandCarousel :direction="'left'" :brands="flags" />
       </div>
     </div>
   </div>
@@ -21,6 +18,7 @@
 
 <script setup>
 import { defineProps, computed } from "vue";
+import BrandCarousel from "./BrandCarousel.vue"
 
 const props = defineProps({
   total: {
@@ -38,18 +36,18 @@ const duplicatedFlags = computed(() => [...props.flags, ...props.flags, ...props
 </script>
 
 <style scoped>
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-
-  100% {
-    transform: translateX(-50%);
-  }
+.p_info {
+  color: #D1EDAA;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
 }
 
-.animate-scroll {
-  width: max-content;
-  animation: scroll 35s linear infinite;
+
+.num_info {
+  color: #7DBA28;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 60px;
 }
 </style>

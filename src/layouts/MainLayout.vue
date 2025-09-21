@@ -19,7 +19,7 @@
 
 .innitialed-cont {
   /* margin-left: auto !important; */
-  max-width: 1946px;
+  max-width: 1882px;
 }
 
 /* @media (max-width: 575.98px) {

@@ -2,8 +2,7 @@
   <div class="chart-container flex items-center">
     <highcharts class="donut-chart" :options="chartOptions"></highcharts>
     <div>
-      <p class="text-[30px]" :style="{ color: colors[index] }" v-for="(item, index) in data" :key="index">{{ item }}
-      </p>
+      <p class="title" :style="{ color: colors[index] }" v-for="(item, index) in data" :key="index">{{ item }}</p>
     </div>
   </div>
 </template>
@@ -33,7 +32,7 @@ const props = defineProps({
   },
   height: {
     type: Number,
-    default: 300,
+    default: 264,
   },
   link: {
     type: String,
@@ -65,27 +64,31 @@ const chartOptions = computed(() => ({
   },
   title: {
     text: `<p style="font-size: 36px; font-weight: bold; color: #7DBA28; padding-left: ${50}px; padding-top: -4px; text-align:center; position: relative; z-index: 10"; >${formattedTitle.value}</p>`,
-    align: 'left',
+    // align: 'left',
+    align: "center",
     verticalAlign: 'middle',
-    className: "my-custom-title",
     style: {
       color: '#4CAF50',
-      fontWeight: 'bold',
+      fontSize: "36px",
+      fontWeight: "bold",
+      color: "#F3FAEA",
+      textAlign: "center",
     },
-    x: 31,
-    useHTML: true,
+    x: -125,
+    y: 35,
+    // useHTML: true,
   },
   plotOptions: {
     pie: {
       innerSize: "60%", // ichini bo‘sh qilib donut qiladi
-      size: '110%',   
+      size: '110%',
       allowPointSelect: true,
       slicedOffset: 10,
       cursor: "pointer",
       dataLabels: {
         enabled: false,
       },
-      margin:10,
+      margin: 10,
       borderWidth: 0,
       showInLegend: true,
     },
@@ -120,7 +123,7 @@ const chartOptions = computed(() => ({
   ],
 }));
 </script>
-<style >
+<style>
 .chart-container {
   width: 100%;
   padding: 0;
@@ -136,5 +139,12 @@ const chartOptions = computed(() => ({
   p {
     z-index: -1 !important;
   }
+}
+
+.title {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 38px;
+  color: #D1EDAA;
 }
 </style>

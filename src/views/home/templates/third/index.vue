@@ -4,7 +4,7 @@
             :title="currentIndex == 3 ? 'IT Park Programs and Infrastructure' : 'Uzbekistan – Central Asia’s fastest growing ecosystem'" />
         <div class="flex dashboard gap-[32px]">
             <div class="w-full space-y-[32px]">
-                <section class="grid grid-cols-9 w-full space-x-[32px] whitespace-nowrap">
+                <section class="grid grid-cols-8 w-full space-x-[32px] whitespace-nowrap">
                     <div class="box col-span-2 blur-green lt-blur-green">
                         <img class="h-[140px]" src="@/assets/icons/third/world_rate.svg" alt="">
                         <p class="num_info">#2</p>
@@ -15,7 +15,7 @@
                         <p class="num_info">$1.2B</p>
                         <p class="p_info">Evaluation of startup <br /> ecosystem</p>
                     </div>
-                    <div class="grid4 col-span-5">
+                    <div class="grid4 col-span-4">
                         <div class="box">
                             <p class="num_info">1200+</p>
                             <p class="p_info fs20 mr-8">Startups participated in local <br /> acceleration programs</p>

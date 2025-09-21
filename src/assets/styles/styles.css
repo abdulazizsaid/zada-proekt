@@ -2,3 +2,8 @@
 @import "./modules/ruberoid-font.css";
 @import "./modules/animations.css";
 
+@import url(fonts.css);
+
+* {
+    font-family: "Inter", sans-serif;
+}

@@ -3,7 +3,7 @@
         <div v-for="(item, index) in data" :key="index" class="flex items-end justify-between gap-6">
             <!-- Chap tomonda nom va progress bar -->
             <div class="flex-1 mr-4">
-                <p class="text-[#D1EDAA] text-[24px] font-medium">{{ item.name }}</p>
+                <p class="p_info">{{ item.name }}</p>
                 <div
                     class="w-full h-[27px] rounded-sm overflow-hidden mt-1">
                     <div class="h-full rounded-sm transition-all duration-500"
@@ -13,7 +13,7 @@
                 </div>
             </div>
             <!-- O‘ng tomonda son -->
-            <p class="text-[#7DBA28] font-bold text-[30px] h-max -m-2">{{ item.value }}</p>
+            <p class="title3">{{ item.value }}</p>
         </div>
     </div>
 </template>
@@ -40,5 +40,19 @@ const maxValue = computed(() => Math.max(...props.data.map(d => d.value)));
 /* Progress animatsiyasi */
 div[style] {
     transition: width 0.6s ease-in-out;
+}
+
+.p_info {
+    color: #D1EDAA;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.title3 {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 38px;
+    color: #7DBA28;
 }
 </style>
