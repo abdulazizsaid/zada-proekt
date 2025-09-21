@@ -24,7 +24,7 @@ let interval;
 onMounted(() => {
     interval = setInterval(() => {
         currentIndex.value = (currentIndex.value + 1) % components.length;
-    }, 15000); // har 6 sekundda almashadi
+    }, 4000); // har 6 sekundda almashadi
 });
 
 onBeforeUnmount(() => {
@@ -39,7 +39,7 @@ onBeforeUnmount(() => {
 }
 
 .fade-scale-enter-from {
-    opacity: 0;
+    opacity: 0.5;
     transform: scale(0.8);
 }
 
@@ -54,8 +54,8 @@ onBeforeUnmount(() => {
 }
 
 .fade-scale-leave-to {
-    opacity: 0;
-    transform: scale(0.8);
+    opacity: 1;
+    transform: scale(1);
 }
 </style>
  
