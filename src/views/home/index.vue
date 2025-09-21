@@ -35,7 +35,7 @@ onBeforeUnmount(() => {
 <style scoped>
 .fade-scale-enter-active,
 .fade-scale-leave-active {
-    transition: all 0.8s ease;
+    transition: all 0.5s ease;
 }
 
 .fade-scale-enter-from {
@@ -54,8 +54,8 @@ onBeforeUnmount(() => {
 }
 
 .fade-scale-leave-to {
-    opacity: 1;
-    transform: scale(1);
+    opacity: 0.5;
+    transform: scale(0.8);
 }
 </style>
  
