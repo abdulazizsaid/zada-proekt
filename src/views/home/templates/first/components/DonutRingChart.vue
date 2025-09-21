@@ -2,7 +2,7 @@
   <div class="chart-container flex items-center">
     <highcharts class="donut-chart" :options="chartOptions"></highcharts>
     <div>
-      <p class="text-[30px]" :class="`text-[${colors[index]}]`" v-for="(item, index) in data" :key="index">{{ item }}
+      <p class="text-[30px]" :style="{ color: colors[index] }" v-for="(item, index) in data" :key="index">{{ item }}
       </p>
     </div>
   </div>
@@ -29,7 +29,7 @@ const props = defineProps({
   },
   colors: {
     type: Array,
-    default: () => ["#4CAF50", "#FF5722"],
+    default: () => ['#7DBA28', '#F16E16', '#FF9800', '#03A9F4', '#9C27B0'],
   },
   height: {
     type: Number,
