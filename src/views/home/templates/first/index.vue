@@ -1,5 +1,5 @@
 <template>
-    <div class="flex w-full h-[892px] gap-5">
+    <div class="flex w-full gap-5">
         <div class=" max-w-[33%] w-full bg-[#151F07] rounded-[40px] p-[40px]">
             <p class="text-[36px]">Number of Members</p>
             <DonutRingChart title="2999" :regions="['Tashkent', 'Regions']" :data="[1870, 1129]" :keys="[1, 2]"
@@ -27,20 +27,7 @@
             ]" />
         </div>
         <div class="flex flex-col gap-6  max-w-[33%] w-full">
-            <FlagsCard :total="64" :flags="[
-                '/vite.svg',
-                '/vite.svg',
-                '/vite.svg',
-                '/vite.svg',
-                '/vite.svg',
-                '/vite.svg',
-                '/vite.svg',
-                '/vite.svg',
-                '/vite.svg',
-                '/vite.svg',
-                '/vite.svg',
-                '/vite.svg',
-            ]" />
+            <FlagsCard :total="64" :flags="flags" />
             <Regioncard />
         </div>
     </div>
@@ -49,8 +36,11 @@
 <script setup>
 import DonutRingChart from './components/DonutRingChart.vue';
 import FlagsCard from './components/FlagsCard.vue';
-import Flags from './components/FlagsCard.vue';
 import Linechart from './components/linechart.vue';
-import Regioncard from './components/regioncard.vue';
+import Regioncard from './components/Regioncard.vue';
 
+const flags = [];
+for (let i = 1; i<=24; i++) {
+    flags.push(`/first/flag/${i}.svg`)
+}
 </script>

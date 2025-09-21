@@ -1,84 +1,105 @@
 <template>
-    <main class="dashboard space-y-[32px] py-[32px]">
-        <section class="flex space-x-[32px]">
-            <div class="box blur-green lt-blur-green">
-                <img src="@/assets/icons/third/world_rate.svg" alt="">
-                <p class="num_info">#2</p>
-                <p class="p_info">In the world by growth rate</p>
-            </div>
-            <div class="box blur-green lt-blur-green">
-                <img src="@/assets/icons/third/ecosystem.svg" alt="">
-                <p class="num_info">$1.2B</p>
-                <p class="p_info">Evaluation of startup ecosystem</p>
-            </div> 
-            <div class="grid4">
-                <div class="box"> 
-                    <p class="num_info">1200+</p>
-                    <p class="p_info fs20">Startups participated in local acceleration programs</p>
+    <main class="flex dashboard py-[32px] gap-[32px]">
+        <div class="w-full space-y-[32px]">
+            <section class="flex space-x-[32px]">
+                <div class="box blur-green lt-blur-green">
+                    <img src="@/assets/icons/third/world_rate.svg" alt="">
+                    <p class="num_info">#2</p>
+                    <p class="p_info">In the world <br /> by growth rate</p>
                 </div>
-                <div class="box blur-green rt-blur-green">
-                    <p class="num_info">$1M</p>
-                    <p class="p_info fs20">Largest startup competition prize fund</p>
+                <div class="box blur-green lt-blur-green">
+                    <img src="@/assets/icons/third/ecosystem.svg" alt="">
+                    <p class="num_info">$1.2B</p>
+                    <p class="p_info">Evaluation of startup <br /> ecosystem</p>
                 </div>
-                <div class="box">
-                    <p class="num_info">7</p>
-                    <p class="p_info fs20">Inbound startup expansion</p>
+                <div class="grid4">
+                    <div class="box">
+                        <p class="num_info">1200+</p>
+                        <p class="p_info fs20">Startups participated in local <br /> acceleration programs</p>
+                    </div>
+                    <div class="box blur-sm-green rt-sm-blur-green relative">
+                        <img class="sm absolute top-5 right-5" src="@/assets/icons/third/competition.svg" alt="">
+                        <p class="num_info">$1M</p>
+                        <p class="p_info fs20">Largest startup <br /> competition prize fund</p>
+                    </div>
+                    <div class="box">
+                        <p class="num_info">7</p>
+                        <p class="p_info fs20">Inbound startup expansion</p>
+                    </div>
+                    <div class="box blur-sm-green rb-sm-blur-green relative">
+                        <img class="absolute bottom-5 right-5" src="@/assets/icons/third/studios.svg" alt="">
+                        <p class="num_info">15</p>
+                        <p class="p_info fs20">Startup studios</p>
+                    </div>
                 </div>
-                <div class="box blur-green rb-blur-green">
-                    <p class="num_info">15</p>
-                    <p class="p_info fs20">Startup studios</p>
+            </section>
+            <section class="flex space-x-[32px]">
+                <div class="box w-[35%]">
+                    <h2 class="title2">Startup Stages</h2>
+                    <Linechart class="mt-6" :data="[
+                        { name: 'Idea', value: 132 },
+                        { name: 'Pre-seed', value: 25 },
+                        { name: 'Seed', value: 115 },
+                        { name: 'Growth Stage', value: 55 },
+                    ]" />
                 </div>
-            </div>
-        </section>
-        <section class="flex space-x-[32px]">
-            <div class="box w-[35%]">
-                <h1>Startup Stages</h1>
-                <ul>
-                    <li v-for="i in [['idea', 100, 25], ['pdea', 50, 25], ['mdea', 50, 25], ['gdea', 50, 25]]">
-                        <p>{{ i[0] }}</p>
-                        <div class="flex gap-6">
-                            <p :style="`width: ${i[1]}%`" class="stage_percent"></p>
-                            <p>{{ i[2] }}</p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="grid4 w-full">
-                <div class="box">
-                    <p class="num_info">$260M+</p>
-                    <p class="p_info fs20">Venture investmentsin 52 startups in 2025</p>
+                <div class="box box_group grid4 w-full">
+                    <div class="inside_box blur-sm-green rb-sm-blur-green relative">
+                        <img class="absolute bottom-3 right-5" src="@/assets/icons/third/investments.svg" alt="">
+                        <p class="num_info">$260M+</p>
+                        <p class="p_info fs20">Venture investmentsin in <br /> <span class="primarygreen">52
+                                startups</span> in 2025</p>
+                    </div>
+                    <div class="inside_box blur-sm-green rb-sm-blur-green relative">
+                        <img class="absolute bottom-3 right-5" src="@/assets/icons/third/localfund.svg" alt="">
+                        <p class="num_info">$160M+</p>
+                        <p class="p_info fs20">Joint venture capital <br /> of local funds</p>
+                    </div>
+                    <div class="inside_box blur-sm-green rb-sm-blur-green relative">
+                        <img class="absolute bottom-3 right-5" src="@/assets/icons/third/unicorns.svg" alt="">
+                        <p class="num_info">2 unicorns</p>
+                        <p class="p_info flex gap-4">
+                            <img src="@/assets/icons/third/uzum.svg" alt="">
+                            <img src="@/assets/icons/third/tbc.svg" alt="">
+                        </p>
+                    </div>
+                    <div class="inside_box blur-sm-green rb-sm-blur-green relative">
+                        <img class="absolute bottom-3 right-5" src="@/assets/icons/third/startups.svg" alt="">
+                        <p class="num_info">600+</p>
+                        <p class="p_info fs20">Startups</p>
+                    </div>
                 </div>
-                <div class="box blur-green rt-blur-green">
-                    <p class="num_info">$160M+</p>
-                    <p class="p_info fs20">Joint venture capitalof local funds</p>
-                </div>
-                <div class="box">
-                    <p class="num_info">2 unicorns</p>
-                    <p class="p_info fs20"></p>
-                </div>
-                <div class="box blur-green rb-blur-green">
-                    <p class="num_info">600+</p>
-                    <p class="p_info fs20">Startups</p>
-                </div>
-            </div>
-        </section>
+            </section>
+        </div>
+        <DonutRingChart title="Startups by <br/> Directions"
+            :categories="['EdTech', 'HealthTech', 'E-commerce & Retail', 'AI', 'FinTech', 'Logistics', 'GameDev', 'HRTech', 'Green Economy', 'AdTech',]"
+            :values="[26.72, 14.19, 13.21, 13.21, 9.24, 6.77, 6.27, 5.28, 3.3, 1.82]"
+            :colors="['#8979FF', '#FF928A', '#3CC3DF', '#FFAE4C', '#537FF1', '#F15353', '#D463DA', '#E2DBFF', '#4DC77B', '#F4CF3B']"
+            height="370" link="/" />
     </main>
 </template>
 
-<script></script>
+<script setup>
+import Linechart from '../first/components/linechart.vue';
+import DonutRingChart from "./components/DonutRingChart.vue"
+</script>
 
 <style lang="scss" scoped>
-.dashboard {
-    img {
-        height: 144px;
-    }
-}
+// .dashboard {}
 
 .box {
     position: relative;
     background: #151F07;
-    border-radius: 20px;
+    border-radius: 40px;
     padding: 40px;
+    overflow: hidden;
+}
+
+.inside_box {
+    position: relative;
+    background: #1F2F0A;
+    border-radius: 32px;
+    padding: 24px;
     overflow: hidden;
 }
 
@@ -89,7 +110,12 @@
 
     .box {
         padding: 24px !important;
+        border-radius: 32px;
     }
+}
+
+.box_group {
+    gap: 24px;
 }
 
 .num_info {
@@ -113,6 +139,7 @@
     margin-top: 16px;
 }
 
+// blur big one
 .blur-green::before {
     content: "";
     position: absolute;
@@ -140,11 +167,40 @@
     bottom: -40px;
 }
 
+// blur small one
+.blur-sm-green::before {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background: #8BCF2D;
+    border-radius: 50%;
+    filter: blur(60px);
+    z-index: 0;
+    opacity: 0.5;
+}
 
-.stage_percent {
-    height: 27px;
-    background: linear-gradient(90deg, #385412 0%, #7DBA28 100%);
-    opacity: 0.8;
-    border-radius: 5px;
+.lt-sm-blur-green::before {
+    left: -16px;
+    top: -16px;
+}
+
+.rt-sm-blur-green::before {
+    right: -16px;
+    top: -16px;
+}
+
+.rb-sm-blur-green::before {
+    right: -16px;
+    bottom: -16px;
+}
+
+
+
+.title2 {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    color: #F3FAEA;
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full h-[892px] flex items-center justify-center">
+    <div class="w-full flex items-center justify-center min-h-[1040px]">
         <Transition name="fade-scale" mode="out-in">
             <component :is="currentComponent" :key="currentIndex" />
         </Transition>
@@ -24,7 +24,7 @@ let interval;
 onMounted(() => {
     interval = setInterval(() => {
         currentIndex.value = (currentIndex.value + 1) % components.length;
-    }, 2000); // har 6 sekundda almashadi
+    }, 5000); // har 6 sekundda almashadi
 });
 
 onBeforeUnmount(() => {

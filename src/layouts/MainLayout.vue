@@ -1,7 +1,7 @@
 <template>
   <!-- start #mainWrap-->
   <div id="mainWrap" class="bg-[#010200]">
-    <div class=" mx-auto innitialed-cont">
+    <div class="mx-auto innitialed-cont">
       <Header />
       <div class="w-full px-10 py-6 ">
         <router-view />
@@ -19,15 +19,16 @@ import Header from '@/shared/components/templates/header/index.vue'
 
 <style>
 :root {
-  --sidebar-width-expanded: 250px; /* kerakli qiymatni yozasiz */
+  --sidebar-width-expanded: 250px;
+  /* kerakli qiymatni yozasiz */
 }
 
 .innitialed-cont {
-  margin-left: auto !important;
-  max-width: calc(1420px);
+  /* margin-left: auto !important; */
+  max-width: 1946px;
 }
 
-@media (max-width: 575.98px) {
+/* @media (max-width: 575.98px) {
   .innitialed-cont {
     min-width: 100%;
     margin: 0 auto !important;
@@ -80,6 +81,5 @@ import Header from '@/shared/components/templates/header/index.vue'
     max-width: 1800px;
     margin: 0 auto !important;
   }
-}
-
+} */
 </style>
