@@ -1,8 +1,8 @@
 <template>
     <main class="flex dashboard gap-[32px]">
         <!-- <div class="w-full space-y-[32px]"> -->
-        <section class="flex space-x-[32px]">
-            <div class="grid4">
+        <section class="flex space-x-[32px] w-full">
+            <div class="grid4 w-full">
                 <div class="box relative">
                     <h2 class="title2">Support Programs</h2>
                     <div class="grid grid-cols-3 gap-8 mt-12 whitespace-nowrap">

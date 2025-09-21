@@ -3,10 +3,9 @@
         <!-- {{ icons[0] }} -->
         <highcharts ref="chartRef" class="donut-chart" :options="chartOptions" @rendered="onChartRendered"></highcharts>
         <!-- Legend with icons -->
-        <div class="legend flex flex-col gap-4 mt-8">
+        <div class="legend flex flex-col gap-4 mt-2">
             <div v-for="(item, index) in legendItems" :key="index" class="flex items-center gap-3"
-                @mouseover="highlightSlice(index)" @mouseleave="resetHighlight(index)"
-                >
+                @mouseover="highlightSlice(index)" @mouseleave="resetHighlight(index)">
                 <img :src="`/third/chart/${index + 1}.svg`" />
                 <p class="flex-1 text-[#D1EDAA] text-[20px] font-medium cursor-pointer">{{ item.name }}</p>
                 <p class="font-bold text-[20px]" :style="{ color: item.color }">{{ item.value }}%</p>
@@ -72,18 +71,7 @@ const props = defineProps({
     },
     icons: {
         type: Array,
-        default: () => [
-            "fa-solid fa-graduation-cap", // EdTech
-            "fa-solid fa-shield-heart",   // HealthTech
-            "fa-solid fa-cart-shopping",  // E-commerce
-            "fa-solid fa-star",           // AI
-            "fa-solid fa-coins",          // FinTech
-            "fa-solid fa-truck",          // Logistics
-            "fa-solid fa-gamepad",        // GameDev
-            "fa-solid fa-user",           // HRTech
-            "fa-solid fa-leaf",           // Green Economy
-            "fa-solid fa-rectangle-ad",   // AdTech
-        ],
+        default: () => [],
     },
 });
 
@@ -91,8 +79,8 @@ const chartOptions = computed(() => ({
     chart: {
         type: "pie",
         backgroundColor: "#0C1605",
-        height: 370,
-        width: 370,
+        height: 350,
+        width: 350,
     },
     title: {
         text: props.title,

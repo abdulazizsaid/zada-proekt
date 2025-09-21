@@ -1,21 +1,21 @@
 <template>
     <main class="flex dashboard gap-[32px]">
         <div class="w-full space-y-[32px]">
-            <section class="flex space-x-[32px]">
-                <div class="box blur-green lt-blur-green">
+            <section class="grid grid-cols-9 w-full space-x-[32px] whitespace-nowrap">
+                <div class="box col-span-2 blur-green lt-blur-green">
                     <img class="h-[140px]" src="@/assets/icons/third/world_rate.svg" alt="">
                     <p class="num_info">#2</p>
                     <p class="p_info">In the world <br /> by growth rate</p>
                 </div>
-                <div class="box blur-green lt-blur-green">
+                <div class="box col-span-2 blur-green lt-blur-green">
                     <img class="h-[140px]" src="@/assets/icons/third/ecosystem.svg" alt="">
                     <p class="num_info">$1.2B</p>
                     <p class="p_info">Evaluation of startup <br /> ecosystem</p>
                 </div>
-                <div class="grid4">
+                <div class="grid4 col-span-5">
                     <div class="box">
                         <p class="num_info">1200+</p>
-                        <p class="p_info fs20">Startups participated in local <br /> acceleration programs</p>
+                        <p class="p_info fs20 mr-8">Startups participated in local <br /> acceleration programs</p>
                     </div>
                     <div class="box blur-sm-green rt-sm-blur-green relative">
                         <img class="sm absolute top-5 right-5" src="@/assets/icons/third/competition.svg" alt="">
@@ -36,7 +36,7 @@
             <section class="flex space-x-[32px]">
                 <div class="box w-[35%]">
                     <h2 class="title2">Startup Stages</h2>
-                    <Linechart class="mt-6" :data="[
+                    <Linechart class="mt-9" :data="[
                         { name: 'Idea', value: 132 },
                         { name: 'Pre-seed', value: 25 },
                         { name: 'Seed', value: 115 },

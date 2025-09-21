@@ -3,7 +3,7 @@
         <Transition name="fade-scale" mode="out-in">
             <div>
                 <Header :title="currentIndex == 3 ? 'IT Park Programs and Infrastructure' : 'Uzbekistan – Central Asia’s fastest growing ecosystem'" />
-                <component :is="currentComponent" :key="currentIndex" />
+                <component class="min-h-[100dvh_-_104px] min-w-[1946px]" :is="currentComponent" :key="currentIndex" />
             </div>
         </Transition>
     </div>
