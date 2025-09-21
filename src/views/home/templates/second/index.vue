@@ -1,5 +1,7 @@
 <template>
     <div>
+        <Header
+            :title="currentIndex == 3 ? 'IT Park Programs and Infrastructure' : 'Uzbekistan – Central Asia’s fastest growing ecosystem'" />
         <div class="flex w-full gap-8 mb-8">
             <div class="max-w-[40%] min-w-[45%] w-full bg-[#151F07] rounded-[40px] p-[40px]">
                 <p class="text-[36px] mb-6 font-bold">Export Geography</p>
@@ -73,6 +75,7 @@
 
 
 <script setup>
+import Header from '@/shared/components/templates/header/index.vue'
 import Linechart from '../first/components/linechart.vue';
 import MapChart from './components/MapChart.vue';
 import { ref } from 'vue'

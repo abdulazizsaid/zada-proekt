@@ -1,103 +1,109 @@
 <template>
-    <main class="flex dashboard gap-[32px]">
-        <!-- <div class="w-full space-y-[32px]"> -->
-        <section class="flex space-x-[32px] w-full">
-            <div class="grid4 w-full">
-                <div class="box relative">
-                    <h2 class="title2">Support Programs</h2>
-                    <div class="grid grid-cols-3 gap-8 mt-12 whitespace-nowrap">
-                        <div>
-                            <img src="@/assets/icons/fourth/localtoglobal.svg" alt="">
-                            <p class="title3 my-4 whitespace-nowrap">Local to Global</p>
-                            <p class="p_info fs18">Export accelerator, <br /> international mentorship, <br /> marketing
-                                support.</p>
+    <div>
+        <Header
+            :title="currentIndex == 3 ? 'IT Park Programs and Infrastructure' : 'Uzbekistan – Central Asia’s fastest growing ecosystem'" />
+        <div class="flex dashboard gap-[32px]">
+            <section class="flex space-x-[32px] w-full">
+                <div class="grid4 w-full">
+                    <div class="box relative">
+                        <h2 class="title2">Support Programs</h2>
+                        <div class="grid grid-cols-3 gap-8 mt-12 whitespace-nowrap">
+                            <div>
+                                <img src="@/assets/icons/fourth/localtoglobal.svg" alt="">
+                                <p class="title3 my-4 whitespace-nowrap">Local to Global</p>
+                                <p class="p_info fs18">Export accelerator, <br /> international mentorship, <br />
+                                    marketing
+                                    support.</p>
+                            </div>
+                            <div>
+                                <img src="@/assets/icons/fourth/zerorisk.svg" alt="">
+                                <p class="title3 my-4 whitespace-nowrap">Zero Risk</p>
+                                <p class="p_info fs18">Free offices and equipment <br /> for up to 12 months, <br />
+                                    reimbursement of hiring <br /> and training costs.</p>
+                            </div>
+                            <div>
+                                <img src="@/assets/icons/fourth/softlanding.svg" alt="">
+                                <p class="title3 my-4 whitespace-nowrap">Soft Landing</p>
+                                <p class="p_info fs18">Assistance in launching <br /> and adapting a business <br /> in
+                                    Uzbekistan.</p>
+                            </div>
                         </div>
-                        <div>
-                            <img src="@/assets/icons/fourth/zerorisk.svg" alt="">
-                            <p class="title3 my-4 whitespace-nowrap">Zero Risk</p>
-                            <p class="p_info fs18">Free offices and equipment <br /> for up to 12 months, <br />
-                                reimbursement of hiring <br /> and training costs.</p>
+                    </div>
+                    <div class="box blur-green lb-blur-green relative">
+                        <div class="flex">
+                            <div class="w-[425px]">
+                                <h2 class="title2">One-Stop Shop</h2>
+                                <p class="p_info">Turnkey service for opening <br /> a company in Uzbekistan.</p>
+                                <img class="sm absolute bottom-0 left-0" src="@/assets/icons/fourth/oss.svg" alt="">
+                            </div>
+                            <ul class="space-y-[64px]">
+                                <li class="flex gap-3 items-center">
+                                    <img src="@/assets/icons/fourth/registration.svg" alt="">
+                                    <p class="p_info fs18 !mt-0">Company registration, tax ID, <br /> bank accounts.</p>
+                                </li>
+                                <li class="flex gap-3 items-center">
+                                    <img src="@/assets/icons/fourth/support.svg" alt="">
+                                    <p class="p_info fs18 !mt-0">Legal, tax, and banking <br /> support.</p>
+                                </li>
+                                <li class="flex gap-3 items-center">
+                                    <img src="@/assets/icons/fourth/assistance.svg" alt="">
+                                    <p class="p_info fs18 !mt-0">Recruitment <br /> assistance.</p>
+                                </li>
+                            </ul>
                         </div>
-                        <div>
-                            <img src="@/assets/icons/fourth/softlanding.svg" alt="">
-                            <p class="title3 my-4 whitespace-nowrap">Soft Landing</p>
-                            <p class="p_info fs18">Assistance in launching <br /> and adapting a business <br /> in
-                                Uzbekistan.</p>
+                    </div>
+                    <div class="box blur-green rt-blur-green relative">
+                        <h2 class="title2">IT Visa</h2>
+                        <p class="p_info">Long-term visa for IT professionals, founders, and investors <br />
+                            with full access to live, work, and invest in Uzbekistan.</p>
+                        <img class="sm absolute top-5 right-5" src="@/assets/icons/fourth/itvisa.svg" alt="">
+                        <div class="grid grid-cols-3 mt-20">
+                            <div>
+                                <img src="@/assets/icons/fourth/validforup.svg" alt="">
+                                <p class="p_info fs18">Valid for up to 3 years, <br /> renewable without exit</p>
+                            </div>
+                            <div>
+                                <img src="@/assets/icons/fourth/healthcare.svg" alt="">
+                                <p class="p_info fs18">Access to healthcare <br /> and education services</p>
+                            </div>
+                            <div>
+                                <img src="@/assets/icons/fourth/purchase.svg" alt="">
+                                <p class="p_info fs18">Opportunity to purchase <br /> real estate</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box blur-green lb-blur-green relative">
+                        <div class="flex">
+                            <div class="w-[420px]">
+                                <h2 class="title2">Infrastructure</h2>
+                                <img class="sm absolute bottom-0 left-0" src="@/assets/icons/fourth/infrastructure.svg"
+                                    alt="">
+                            </div>
+                            <ul class="space-y-8">
+                                <li>
+                                    <p class="num_info">14</p>
+                                    <p class="p_info fs18">Branches across Uzbekistan</p>
+                                </li>
+                                <li>
+                                    <p class="num_info">6</p>
+                                    <p class="p_info fs18">International branches</p>
+                                </li>
+                                <li>
+                                    <p class="num_info">Data centers</p>
+                                    <p class="p_info fs18">DGPMC, UZINFOCOM, Data Volt</p>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-                <div class="box blur-green lb-blur-green relative">
-                    <div class="flex">
-                        <div class="w-[425px]">
-                            <h2 class="title2">One-Stop Shop</h2>
-                            <p class="p_info">Turnkey service for opening <br /> a company in Uzbekistan.</p>
-                            <img class="sm absolute bottom-0 left-0" src="@/assets/icons/fourth/oss.svg" alt="">
-                        </div>
-                        <ul class="space-y-[64px]">
-                            <li class="flex gap-3 items-center">
-                                <img src="@/assets/icons/fourth/registration.svg" alt="">
-                                <p class="p_info fs18 !mt-0">Company registration, tax ID, <br /> bank accounts.</p>
-                            </li>
-                            <li class="flex gap-3 items-center">
-                                <img src="@/assets/icons/fourth/support.svg" alt="">
-                                <p class="p_info fs18 !mt-0">Legal, tax, and banking <br /> support.</p>
-                            </li>
-                            <li class="flex gap-3 items-center">
-                                <img src="@/assets/icons/fourth/assistance.svg" alt="">
-                                <p class="p_info fs18 !mt-0">Recruitment <br /> assistance.</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="box blur-green rt-blur-green relative">
-                    <h2 class="title2">IT Visa</h2>
-                    <p class="p_info">Long-term visa for IT professionals, founders, and investors <br />
-                        with full access to live, work, and invest in Uzbekistan.</p>
-                    <img class="sm absolute top-5 right-5" src="@/assets/icons/fourth/itvisa.svg" alt="">
-                    <div class="grid grid-cols-3 mt-20">
-                        <div>
-                            <img src="@/assets/icons/fourth/validforup.svg" alt="">
-                            <p class="p_info fs18">Valid for up to 3 years, <br /> renewable without exit</p>
-                        </div>
-                        <div>
-                            <img src="@/assets/icons/fourth/healthcare.svg" alt="">
-                            <p class="p_info fs18">Access to healthcare <br /> and education services</p>
-                        </div>
-                        <div>
-                            <img src="@/assets/icons/fourth/purchase.svg" alt="">
-                            <p class="p_info fs18">Opportunity to purchase <br /> real estate</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="box blur-green lb-blur-green relative">
-                    <div class="flex">
-                        <div class="w-[420px]">
-                            <h2 class="title2">Infrastructure</h2>
-                            <img class="sm absolute bottom-0 left-0" src="@/assets/icons/fourth/infrastructure.svg"
-                                alt="">
-                        </div>
-                        <ul class="space-y-8">
-                            <li>
-                                <p class="num_info">14</p>
-                                <p class="p_info fs18">Branches across Uzbekistan</p>
-                            </li>
-                            <li>
-                                <p class="num_info">6</p>
-                                <p class="p_info fs18">International branches</p>
-                            </li>
-                            <li>
-                                <p class="num_info">Data centers</p>
-                                <p class="p_info fs18">DGPMC, UZINFOCOM, Data Volt</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
+            </section>
+        </div>
+    </div>
 </template>
 
-<script setup></script>
+<script setup>
+import Header from '@/shared/components/templates/header/index.vue'
+</script>
 
 <style lang="scss" scoped>
 // .dashboard {}
