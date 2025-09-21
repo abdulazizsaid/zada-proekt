@@ -1,5 +1,5 @@
 <template>
-    <main class="flex dashboard py-[32px] gap-[32px]">
+    <main class="flex dashboard gap-[32px]">
         <div class="w-full space-y-[32px]">
             <section class="flex space-x-[32px]">
                 <div class="box blur-green lt-blur-green">
