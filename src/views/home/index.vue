@@ -19,15 +19,15 @@ import Third from "./templates/third/index.vue";
 import Fourth from "./templates/fourth/index.vue";
 
 const components = [First, Second, Third, Fourth];
-const currentIndex = ref(0);
+const currentIndex = ref(2);
 const currentComponent = computed(() => components[currentIndex.value]);
 
 let interval;
 
 onMounted(() => {
-    interval = setInterval(() => {
-        currentIndex.value = (currentIndex.value + 1) % components.length;
-    }, 15000); // har 7 sekundda almashadi
+    // interval = setInterval(() => {
+    //     currentIndex.value = (currentIndex.value + 1) % components.length;
+    // }, 15000); // har 7 sekundda almashadi
 });
 
 onBeforeUnmount(() => {
