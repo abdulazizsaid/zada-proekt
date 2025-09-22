@@ -85,7 +85,7 @@
 
 <script setup>
 import Header from '@/shared/components/templates/header/index.vue'
-import Linechart from '../first/components/linechart.vue';
+import Linechart from './components/linechart.vue';
 import DonutRingChart from "./components/DonutRingChart.vue"
 </script>
 

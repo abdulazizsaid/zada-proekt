@@ -2,72 +2,74 @@
     <div>
         <Header
             :title="currentIndex == 3 ? 'IT Park Programs and Infrastructure' : 'Uzbekistan – Central Asia’s fastest growing ecosystem'" />
-        <div class="flex w-full gap-8 mb-8">
-            <div class="max-w-[40%] min-w-[45%] w-full bg-[#151F07] rounded-[40px] p-[40px]">
-                <p class="text-[36px] mb-6 font-bold">Export Geography</p>
-                <MapChart />
-                <div class="flex gap-8 bg-[#151F07] p-4 rounded-xl mt-5">
-                    <div v-for="(item, i) in regions" :key="i" class="flex items-center gap-1">
-                        <!-- rangli doira -->
-                        <span class="w-3 h-3 rounded-full" :style="{ backgroundColor: item.color }"></span>
-                        <!-- nom va foiz -->
-                        <span class="text-[#D1EDAA] text-[20px]">
-                            {{ item.name }}
-                            <span :style="{ color: item.color }" class="font-bold">
-                                {{ item.value }}%
+        <div>
+            <div class="flex w-full gap-8 mb-8">
+                <div class="max-w-[40%] min-w-[45%] w-full bg-[#151F07] rounded-[40px] p-[40px]">
+                    <p class="text-[36px] mb-6 font-bold">Export Geography</p>
+                    <MapChart />
+                    <div class="flex gap-8 bg-[#151F07] px-4 rounded-xl mt-1.5">
+                        <div v-for="(item, i) in regions" :key="i" class="flex items-center gap-1">
+                            <!-- rangli doira -->
+                            <span class="w-3 h-3 rounded-full" :style="{ backgroundColor: item.color }"></span>
+                            <!-- nom va foiz -->
+                            <span class="text-[#D1EDAA] text-[20px]">
+                                {{ item.name }}
+                                <span :style="{ color: item.color }" class="font-bold">
+                                    {{ item.value }}%
+                                </span>
                             </span>
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div
-                class="max-w-[27.5%] min-w-[25%] w-full bg-[#151F07] rounded-[40px] p-[40px] box blur-green rt-blur-green">
-                <div class="flex justify-between mb-[64px]">
-                    <div>
-                        <h2 class="title3 whitespace-nowrap">Number <br> of Exporters</h2>
-                        <p class="text-[48px] mt-6 text-[#7DBA28] font-bold">750</p>
-                    </div>
-                    <img class="w-[139.35943603515625px] h-[167.9999542236328]" src="@/assets/icons/second/globe.svg"
-                        alt="">
-
-                </div>
-                <Linechart :data="[
-                    { name: 'Asia-Pacific & CIS', value: 294 },
-                    { name: 'America', value: 189 },
-                    { name: 'EU & UK', value: 189 },
-                    { name: 'MENA', value: 78 },
-                ]" />
-            </div>
-
-            <div class="max-w-[27.5%] min-w-[25%] w-full flex flex-col gap-6">
-                <div class="w-full bg-[#151F07] rounded-[40px] p-[30px] h-[288px] box blur-green rt-blur-green">
-                    <div class="flex justify-between">
-                        <div>
-                            <h2 class="title3 mb-11">Export Сoverage</h2>
-                            <p class="text-[48px] text-[#7DBA28] font-bold leading-none">90</p>
-                            <p class="text-[48px] text-[#7DBA28] font-bold leading-none">countries</p>
                         </div>
                     </div>
                 </div>
-                <div class="w-full bg-[#151F07] rounded-[40px] p-8 box blur-green lt-blur-green">
-                    <div class="flex justify-between">
+                <div
+                    class="max-w-[27.5%] min-w-[25%] w-full bg-[#151F07] rounded-[40px] p-[40px] box blur-green rt-blur-green">
+                    <div class="flex justify-between mb-[64px]">
                         <div>
-                            <img class="w-[112px] h-[126px] mb-6" src="@/assets/icons/second/lines.svg" alt="">
-                            <h2 class="title3">Export Directions</h2>
-                            <p class="text-[48px] text-[#7DBA28] font-bold">75</p>
+                            <h2 class="title3 whitespace-nowrap">Number <br> of Exporters</h2>
+                            <p class="text-[48px] mt-6 leading-[60px] text-[#7DBA28] font-bold">750</p>
+                        </div>
+                        <img class="w-[139.35943603515625px] h-[167.9999542236328]"
+                            src="@/assets/icons/second/globe.svg" alt="">
+
+                    </div>
+                    <Linechart :data="[
+                        { name: 'Asia-Pacific & CIS', value: 294 },
+                        { name: 'America', value: 189 },
+                        { name: 'EU & UK', value: 189 },
+                        { name: 'MENA', value: 78 },
+                    ]" />
+                </div>
+
+                <div class="max-w-[27.5%] min-w-[25%] w-full flex flex-col gap-6">
+                    <div class="w-full bg-[#151F07] rounded-[40px] p-[40px] box blur-green rt-blur-green">
+                        <div class="flex justify-between">
+                            <div>
+                                <h2 class="title3 mb-11">Export Сoverage</h2>
+                                <p class="text-[48px] leading-[48px] text-[#7DBA28] font-bold">90</p>
+                                <p class="text-[48px] leading-[48px] text-[#7DBA28] font-bold">countries</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full bg-[#151F07] rounded-[40px] p-8 !pt-[34px] box blur-green lt-blur-green">
+                        <div class="flex justify-between">
+                            <div>
+                                <img class="w-[112px] h-[126px] mb-6" src="@/assets/icons/second/lines.svg" alt="">
+                                <h2 class="title3">Export Directions</h2>
+                                <p class="text-[48px] text-[#7DBA28] leading-[60px] font-bold">75</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="w-full bg-[#151F07] rounded-[40px] p-[40px] flex box blur-green lb-blur-green justify-end">
-            <div class="w-[600px]">
-                <h2 class="text-[36px] font-bold">
-                    Top Member <br> Companies
-                </h2>
-            </div>
-            <div class="flex flex-wrap w-full gap-18 justify-between pr-20">
-                <img v-for="(item, index) in imgs" :key="index" :src="item" alt="">
+            <div class="w-full bg-[#151F07] rounded-[40px] p-[40px] flex box blur-green lb-blur-green justify-end">
+                <div class="w-[600px]">
+                    <h2 class="text-[36px] font-bold">
+                        Top Member <br> Companies
+                    </h2>
+                </div>
+                <div class="flex flex-wrap w-full gap-18 justify-between pr-20">
+                    <img v-for="(item, index) in imgs" :key="index" :src="item" alt="">
+                </div>
             </div>
         </div>
     </div>
@@ -76,7 +78,7 @@
 
 <script setup>
 import Header from '@/shared/components/templates/header/index.vue'
-import Linechart from '../first/components/linechart.vue';
+import Linechart from './components/linechart.vue';
 import MapChart from './components/MapChart.vue';
 import { ref } from 'vue'
 

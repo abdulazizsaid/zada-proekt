@@ -60,15 +60,15 @@
                         <div class="grid grid-cols-3 mt-20">
                             <div>
                                 <img src="@/assets/icons/fourth/validforup.svg" alt="">
-                                <p class="p_info fs18">Valid for up to 3 years, <br /> renewable without exit</p>
+                                <p class="p_info fs18 !mt-3">Valid for up to 3 years, <br /> renewable without exit</p>
                             </div>
                             <div>
                                 <img src="@/assets/icons/fourth/healthcare.svg" alt="">
-                                <p class="p_info fs18">Access to healthcare <br /> and education services</p>
+                                <p class="p_info fs18 !mt-3">Access to healthcare <br /> and education services</p>
                             </div>
                             <div>
                                 <img src="@/assets/icons/fourth/purchase.svg" alt="">
-                                <p class="p_info fs18">Opportunity to purchase <br /> real estate</p>
+                                <p class="p_info fs18 !mt-3">Opportunity to purchase <br /> real estate</p>
                             </div>
                         </div>
                     </div>
@@ -79,18 +79,18 @@
                                 <img class="sm absolute bottom-0 left-0" src="@/assets/icons/fourth/infrastructure.svg"
                                     alt="">
                             </div>
-                            <ul class="space-y-8">
+                            <ul class="space-y-6">
                                 <li>
                                     <p class="num_info">14</p>
-                                    <p class="p_info fs18">Branches across Uzbekistan</p>
+                                    <p class="p_info fs18 !mt-2">Branches across Uzbekistan</p>
                                 </li>
                                 <li>
                                     <p class="num_info">6</p>
-                                    <p class="p_info fs18">International branches</p>
+                                    <p class="p_info fs18 !mt-2">International branches</p>
                                 </li>
                                 <li>
                                     <p class="num_info">Data centers</p>
-                                    <p class="p_info fs18">DGPMC, UZINFOCOM, Data Volt</p>
+                                    <p class="p_info fs18 !mt-2">DGPMC, UZINFOCOM, Data Volt</p>
                                 </li>
                             </ul>
                         </div>

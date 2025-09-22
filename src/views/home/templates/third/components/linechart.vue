@@ -1,11 +1,11 @@
 <template>
-    <div class="w-full space-y-5 rounded-lg">
+    <div class="w-full space-y-8 rounded-lg">
         <div v-for="(item, index) in data" :key="index" class="flex items-end justify-between gap-6">
             <!-- Chap tomonda nom va progress bar -->
             <div class="flex-1 mr-4">
                 <p class="p_info">{{ item.name }}</p>
                 <div
-                    class="w-full h-[27px] rounded-sm overflow-hidden mt-[9px]">
+                    class="w-full h-[27px] rounded-sm overflow-hidden mt-[12px]">
                     <div class="h-full rounded-sm transition-all duration-500"
                         style="background: linear-gradient(90deg, #385412 0%, #7DBA28 100%);" :style="{
                             width: ((item.value / maxValue) * 100) + '%',

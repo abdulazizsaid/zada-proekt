@@ -1,6 +1,6 @@
 <template>
   <div class="bg-[#151F07] rounded-[40px] w-full overflow-hidden">
-    <div class="p-[40px] pb-[80px]">
+    <div class="p-[40px] pb-[64px]">
       <p class="p_info">Foreign members from</p>
       <h2 class="num_info mb-4">
         {{ total }} countries

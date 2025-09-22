@@ -5,7 +5,7 @@
             <div class="flex-1 mr-4">
                 <p class="p_info">{{ item.name }}</p>
                 <div
-                    class="w-full h-[27px] rounded-sm overflow-hidden mt-[9px]">
+                    class="w-full h-[27px] rounded-sm overflow-hidden mt-[11.5px]">
                     <div class="h-full rounded-sm transition-all duration-500"
                         style="background: linear-gradient(90deg, #385412 0%, #7DBA28 100%);" :style="{
                             width: ((item.value / maxValue) * 100) + '%',
