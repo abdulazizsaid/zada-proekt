@@ -4,25 +4,25 @@
             :title="currentIndex == 3 ? 'IT Park Programs and Infrastructure' : 'Uzbekistan – Central Asia’s fastest growing ecosystem'" />
         <div>
             <div class="flex w-full gap-8 mb-8">
-                <div class="max-w-[40%] min-w-[45%] w-full bg-[#151F07] rounded-[40px] p-[40px] pb-[20px]">
+                <div class="min-w-[938px] w-full bg-[#151F07] rounded-[40px] p-[40px] pb-[20px]">
                     <p class="text-[36px] mb-6 font-bold">Export Geography</p>
                     <MapChart />
-                    <div class="flex gap-7 bg-[#151F07] px-4 rounded-xl mt-1.5">
-                        <div v-for="(item, i) in regions" :key="i" class="flex items-center gap-1">
+                    <div class="flex gap-[50px] justify-between whitespace-nowrap bg-[#151F07] px-4 rounded-xl mt-1.5">
+                        <div v-for="(item, i) in regions" :key="i" class="flex items-center gap-2">
                             <!-- rangli doira -->
-                            <span class="w-3 h-3 rounded-full" :style="{ backgroundColor: item.color }"></span>
+                            <span class="w-5 h-5 rounded-full mt-0.5" :style="{ backgroundColor: item.color }"></span>
                             <!-- nom va foiz -->
-                            <span class="text-[#D1EDAA] text-[20px]">
-                                {{ item.name }}
-                                <span :style="{ color: item.color }" class="font-bold">
-                                    {{ item.value }}%
-                                </span>
+                            <div class="text-[#D1EDAA] text-[20px] font-medium">
+                                <span>{{ item.name }}</span>
+                            </div>
+                            <span :style="{ color: item.color }" class="text-[#D1EDAA] text-[20px] font-bold">
+                                {{ item.value }}%
                             </span>
                         </div>
                     </div>
                 </div>
                 <div
-                    class="max-w-[27.5%] min-w-[25%] w-full bg-[#151F07] rounded-[40px] p-[40px] box blur-green rt-blur-green">
+                    class="min-w-[514px] w-full bg-[#151F07] rounded-[40px] p-[40px] box blur-green rt-blur-green">
                     <div class="flex justify-between mb-[64px]">
                         <div>
                             <h2 class="title3 whitespace-nowrap">Number <br> of Exporters</h2>
@@ -40,7 +40,7 @@
                     ]" />
                 </div>
 
-                <div class="max-w-[27.5%] min-w-[25%] w-full flex flex-col gap-6">
+                <div class="w-full flex flex-col gap-6">
                     <div class="w-full bg-[#151F07] rounded-[40px] p-[40px] box blur-green rt-blur-green">
                         <div class="flex justify-between">
                             <div>

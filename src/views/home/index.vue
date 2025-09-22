@@ -6,6 +6,14 @@
                 <component class="min-h-[100dvh_-_104px] min-w-[1882px]" :is="currentComponent" :key="currentIndex" />
             </keep-alive>
         </Transition>
+
+        <!-- preload all components -->
+         <template v-show="false">
+            <First />
+            <Second />
+            <Third />
+            <Fourth />
+         </template>
     </div>
 </template>
 
