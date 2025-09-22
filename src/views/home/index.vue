@@ -27,7 +27,7 @@ let interval;
 onMounted(() => {
     interval = setInterval(() => {
         currentIndex.value = (currentIndex.value + 1) % components.length;
-    }, 15000); // har 7 sekundda almashadi
+    }, 3000); // har 7 sekundda almashadi
 });
 
 onBeforeUnmount(() => {

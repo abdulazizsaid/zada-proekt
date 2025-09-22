@@ -45,3 +45,12 @@ a:hover {
   min-width: 1882px;
   min-height: 1092px;
 }
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* firefox uchun */
+html {
+  scrollbar-width: none; /* no scrollbar */
+}
