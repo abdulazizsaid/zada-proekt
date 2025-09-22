@@ -6,7 +6,7 @@
             <div class="w-full space-y-[32px]">
                 <section class="grid grid-cols-8 w-full space-x-[32px] whitespace-nowrap">
                     <div class="box !pt-[26px] col-span-2 blur-green lt-blur-green">
-                        <img class="h-[140px] mb-2" src="@/assets/icons/third/world_rate.svg" alt="">
+                        <img class="h-[140px] mb-3" src="@/assets/icons/third/world_rate.svg" alt="">
                         <p class="num_info">#2</p>
                         <p class="p_info">In the world <br /> by growth rate</p>
                     </div>
@@ -39,7 +39,7 @@
                 <section class="flex space-x-[32px]">
                     <div class="box w-[35%]">
                         <h2 class="title2">Startup Stages</h2>
-                        <Linechart class="mt-9" :data="[
+                        <Linechart class="mt-[38.2px]" :data="[
                             { name: 'Idea', value: 132 },
                             { name: 'Pre-seed', value: 25 },
                             { name: 'Seed', value: 115 },
