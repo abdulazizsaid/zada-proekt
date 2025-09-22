@@ -15,6 +15,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+
 html, body {
   background: #010200;
   display: flex;
@@ -38,4 +39,9 @@ a:hover {
 
 .primarygreen {
     color: #7DBA28;
+}
+
+#app {
+  min-width: 1882px;
+  min-height: 1092px;
 }

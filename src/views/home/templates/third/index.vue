@@ -5,13 +5,13 @@
         <div class="flex dashboard gap-[32px]">
             <div class="w-full space-y-[32px]">
                 <section class="grid grid-cols-8 w-full space-x-[32px] whitespace-nowrap">
-                    <div class="box col-span-2 blur-green lt-blur-green">
-                        <img class="h-[140px]" src="@/assets/icons/third/world_rate.svg" alt="">
+                    <div class="box !pt-[26px] col-span-2 blur-green lt-blur-green">
+                        <img class="h-[140px] mb-2" src="@/assets/icons/third/world_rate.svg" alt="">
                         <p class="num_info">#2</p>
                         <p class="p_info">In the world <br /> by growth rate</p>
                     </div>
-                    <div class="box col-span-2 blur-green lt-blur-green">
-                        <img class="h-[140px]" src="@/assets/icons/third/ecosystem.svg" alt="">
+                    <div class="box col-span-2 !pt-[26px] blur-green lt-blur-green">
+                        <img class="h-[140px] mb-2" src="@/assets/icons/third/ecosystem.svg" alt="">
                         <p class="num_info">$1.2B</p>
                         <p class="p_info">Evaluation of startup <br /> ecosystem</p>
                     </div>

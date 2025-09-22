@@ -40,6 +40,7 @@ export default {
     position: relative;
     height: 60px;
     overflow: hidden;
+    width: 100%;
 }
 
 .brand-carousel {

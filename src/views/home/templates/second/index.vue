@@ -4,10 +4,10 @@
             :title="currentIndex == 3 ? 'IT Park Programs and Infrastructure' : 'Uzbekistan – Central Asia’s fastest growing ecosystem'" />
         <div>
             <div class="flex w-full gap-8 mb-8">
-                <div class="max-w-[40%] min-w-[45%] w-full bg-[#151F07] rounded-[40px] p-[40px]">
+                <div class="max-w-[40%] min-w-[45%] w-full bg-[#151F07] rounded-[40px] p-[40px] pb-[20px]">
                     <p class="text-[36px] mb-6 font-bold">Export Geography</p>
                     <MapChart />
-                    <div class="flex gap-8 bg-[#151F07] px-4 rounded-xl mt-1.5">
+                    <div class="flex gap-7 bg-[#151F07] px-4 rounded-xl mt-1.5">
                         <div v-for="(item, i) in regions" :key="i" class="flex items-center gap-1">
                             <!-- rangli doira -->
                             <span class="w-3 h-3 rounded-full" :style="{ backgroundColor: item.color }"></span>
@@ -28,7 +28,7 @@
                             <h2 class="title3 whitespace-nowrap">Number <br> of Exporters</h2>
                             <p class="text-[48px] mt-6 leading-[60px] text-[#7DBA28] font-bold">750</p>
                         </div>
-                        <img class="w-[139.35943603515625px] h-[167.9999542236328]"
+                        <img class="w-[139.35px] h-[167px]"
                             src="@/assets/icons/second/globe.svg" alt="">
 
                     </div>
@@ -50,10 +50,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="w-full bg-[#151F07] rounded-[40px] p-8 !pt-[34px] box blur-green lt-blur-green">
+                    <div class="w-full bg-[#151F07] rounded-[40px] p-8 !pt-[26px] !pb-[36px] box blur-green lt-blur-green">
                         <div class="flex justify-between">
                             <div>
-                                <img class="w-[112px] h-[126px] mb-6" src="@/assets/icons/second/lines.svg" alt="">
+                                <img class="w-[122px] h-[136px] mb-6" src="@/assets/icons/second/lines.svg" alt="">
                                 <h2 class="title3">Export Directions</h2>
                                 <p class="text-[48px] text-[#7DBA28] leading-[60px] font-bold">75</p>
                             </div>

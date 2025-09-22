@@ -5,7 +5,7 @@
         <div class="flex w-full gap-8">
             <div class="max-w-[681px] w-full bg-[#151F07] rounded-[40px] p-[40px]">
                 <p class="title2 mb-8">Number of Members</p>
-                <DonutRingChart title="2999" :regions="['Tashkent', 'Regions']" :data="[1870, 1129]" :keys="[1, 2]"
+                <DonutRingChart title="3064" :regions="['Tashkent', 'Regions']" :data="[1909, 1155]" :keys="[1, 2]"
                     :colors="['#7DBA28', '#F16E16', '#FF9800', '#03A9F4', '#9C27B0']" height="264" link="/" />
                 <h2 class="title2 mt-9 mb-8">Member Companies Activities</h2>
                 <Linechart :data="[
@@ -18,7 +18,7 @@
             </div>
             <div class="max-w-[681px] w-full bg-[#151F07] rounded-[40px] p-[40px]">
                 <p class="title2 mb-8">Number of Foreign Companies</p>
-                <DonutRingChart title="800" :regions="['Tashkent', 'Regions']" :data="[586, 214]" :keys="[1, 2]"
+                <DonutRingChart title="815" :regions="['Tashkent', 'Regions']" :data="[595, 220]" :keys="[1, 2]"
                     :colors="['#7DBA28', '#F16E16', '#FF9800', '#03A9F4', '#9C27B0']" height="264" link="/" />
                 <h2 class="title2 mt-9 mb-8">Foreign Companies Activities</h2>
                 <Linechart :data="[
@@ -30,7 +30,7 @@
                 ]" />
             </div>
             <div class="flex flex-col gap-8  max-w-[476px] w-full">
-                <FlagsCard :total="64" :flags="flags" />
+                <FlagsCard :total="63" :flags="flags" />
                 <Regioncard />
             </div>
         </div>

@@ -2,7 +2,7 @@
     <div class="chart-container flex flex-col items-center">
         <highcharts ref="chartRef" class="donut-chart" :options="chartOptions" @rendered="onChartRendered"></highcharts>
         <!-- Legend with icons -->
-        <div class="legend flex flex-col gap-4 mt-2">
+        <div class="legend flex flex-col gap-3 mt-9">
             <div v-for="(item, index) in legendItems" :key="index" class="flex items-center gap-3"
                 @mouseover="highlightSlice(index)" @mouseleave="resetHighlight(index)">
                 <img :src="`/third/chart/${index + 1}.svg`" />
