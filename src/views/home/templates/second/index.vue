@@ -86,7 +86,7 @@ const regions = [
     { name: "America", value: 45, color: "#E67E22" },       // orange
     { name: "Asia-Pacific & CIS", value: 26, color: "#6EB52D" }, // green
     { name: "EU & UK", value: 24, color: "#7D5DFB" },       // purple
-    { name: "MENA", value: 24, color: "#1CA9C9" },          // blue
+    { name: "MENA", value: 5, color: "#1CA9C9" },          // blue
 ];
 
 const imgs = ref([
