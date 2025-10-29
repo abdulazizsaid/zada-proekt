@@ -50,7 +50,7 @@
                         <div class="inside_box blur-sm-green rb-sm-blur-green relative">
                             <img class="absolute bottom-3 right-5" src="@/assets/icons/third/investments.svg" alt="">
                             <p class="num_info">$260M+</p>
-                            <p class="p_info fs20">Venture investmentsin in <br /> <span class="primarygreen">52
+                            <p class="p_info fs20">Venture investments in <br /> <span class="primarygreen">52
                                     startups</span> in 2025</p>
                         </div>
                         <div class="inside_box blur-sm-green rb-sm-blur-green relative">
