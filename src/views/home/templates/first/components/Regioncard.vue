@@ -4,19 +4,19 @@
     <ul class="space-y-8 mt-[60px]">
       <li class="flex justify-between items-center text-[#7DBA28]">
         <span class="title3">Asia-Pacific & CIS</span>
-        <span class="num_info">644</span>
+        <span class="num_info">676</span>
       </li>
       <li class="flex justify-between items-center text-[#7DBA28]">
         <span class="title3">EU & UK</span>
-        <span class="num_info">95</span>
+        <span class="num_info">93</span>
       </li>
       <li class="flex justify-between items-center text-[#7DBA28]">
         <span class="title3">America</span>
-        <span class="num_info">68</span>
+        <span class="num_info">65</span>
       </li>
       <li class="flex justify-between items-center text-[#7DBA28]">
         <span class="title3">MENA</span>
-        <span class="num_info">63</span>
+        <span class="num_info">64</span>
       </li>
     </ul>
   </div>
