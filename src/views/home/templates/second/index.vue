@@ -26,7 +26,7 @@
                     <div class="flex justify-between mb-[64px]">
                         <div>
                             <h2 class="title3 whitespace-nowrap">Number <br> of Exporters</h2>
-                            <p class="text-[48px] mt-6 leading-[60px] text-[#7DBA28] font-bold">750</p>
+                            <p class="text-[48px] mt-6 leading-[60px] text-[#7DBA28] font-bold">800</p>
                         </div>
                         <img class="w-[139.35px] h-[167px]"
                             src="@/assets/icons/second/globe.svg" alt="">
