@@ -5,32 +5,32 @@
         <div class="flex w-full gap-8">
             <div class="max-w-[681px] w-full bg-[#151F07] rounded-[40px] p-[40px]">
                 <p class="title2 mb-8">Number of Members</p>
-                <DonutRingChart title="3286" :regions="['Tashkent', 'Regions']" :data="[2021, 1265]" :keys="[1, 2]"
+                <DonutRingChart title="3348" :regions="['Tashkent', 'Regions']" :data="[2059, 1289]" :keys="[1, 2]"
                     :colors="['#7DBA28', '#F16E16', '#FF9800', '#03A9F4', '#9C27B0']" height="264" link="/" />
                 <h2 class="title2 mt-9 mb-8">Member Companies Activities</h2>
                 <Linechart :data="[
-                    { name: 'IT Services', value: 1257 },
-                    { name: 'BPO and services', value: 634 },
-                    { name: 'Education', value: 509 },
-                    { name: 'SaaS Service', value: 733 },
-                    { name: 'GameDev & Design', value: 153 },
+                    { name: 'IT Services', value: 1281 },
+                    { name: 'BPO and services', value: 651 },
+                    { name: 'Education', value: 514 },
+                    { name: 'SaaS Service', value: 748 },
+                    { name: 'GameDev & Design', value: 154 },
                 ]" />
             </div>
             <div class="max-w-[681px] w-full bg-[#151F07] rounded-[40px] p-[40px]">
                 <p class="title2 mb-8">Number of Foreign Companies</p>
-                <DonutRingChart title="898" :regions="['Tashkent', 'Regions']" :data="[629, 269]" :keys="[1, 2]"
+                <DonutRingChart title="916" :regions="['Tashkent', 'Regions']" :data="[636, 280]" :keys="[1, 2]"
                     :colors="['#7DBA28', '#F16E16', '#FF9800', '#03A9F4', '#9C27B0']" height="264" link="/" />
                 <h2 class="title2 mt-9 mb-8">Foreign Companies Activities</h2>
                 <Linechart :data="[
-                    { name: 'IT Services', value: 385 },
-                    { name: 'BPO and services', value: 168 },
-                    { name: 'Education', value: 41 },
-                    { name: 'SaaS Service', value: 250 },
+                    { name: 'IT Services', value: 392 },
+                    { name: 'BPO and services', value: 392 },
+                    { name: 'Education', value: 42 },
+                    { name: 'SaaS Service', value: 255 },
                     { name: 'GameDev & Design', value: 54 },
                 ]" />
             </div>
             <div class="flex flex-col gap-8  max-w-[476px] w-full">
-                <FlagsCard :total="67" :flags="flags" />
+                <FlagsCard :total="69" :flags="flags" />
                 <Regioncard />
             </div>
         </div>
