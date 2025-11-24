@@ -18,12 +18,12 @@
             </div>
             <div class="max-w-[681px] w-full bg-[#151F07] rounded-[40px] p-[40px]">
                 <p class="title2 mb-8">Number of Foreign Companies</p>
-                <DonutRingChart title="916" :regions="['Tashkent', 'Regions']" :data="[636, 280]" :keys="[1, 2]"
+                <DonutRingChart title="915" :regions="['Tashkent', 'Regions']" :data="[635, 280]" :keys="[1, 2]"
                     :colors="['#7DBA28', '#F16E16', '#FF9800', '#03A9F4', '#9C27B0']" height="264" link="/" />
                 <h2 class="title2 mt-9 mb-8">Foreign Companies Activities</h2>
                 <Linechart :data="[
-                    { name: 'IT Services', value: 392 },
-                    { name: 'BPO and services', value: 392 },
+                    { name: 'IT Services', value: 391 },
+                    { name: 'BPO and services', value: 173 },
                     { name: 'Education', value: 42 },
                     { name: 'SaaS Service', value: 255 },
                     { name: 'GameDev & Design', value: 54 },
