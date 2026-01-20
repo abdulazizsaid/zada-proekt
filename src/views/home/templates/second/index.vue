@@ -38,7 +38,7 @@
                         { name: 'EU & UK', value: 189 },
                         { name: 'MENA', value: 78 },
                     ]" />
-                </div>
+                </div> 
 
                 <div class="w-full flex flex-col gap-6">
                     <div class="w-full bg-[#151F07] rounded-[40px] p-[40px] box blur-green rt-blur-green">
