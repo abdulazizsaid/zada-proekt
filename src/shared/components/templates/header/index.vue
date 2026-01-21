@@ -3,7 +3,7 @@
         <div className="bg-[#151F07] w-full rounded-[24px] flex items-center justify-between px-[40px] py-[16px]">
             <h2 class="text-[48px]">{{ title }}</h2>
             <div>
-                <img src="@/assets/icons/logo.svg" height="56" alt="">
+                <img loading="lazy" src="@/assets/icons/logo.svg" height="56" alt="">
             </div>
         </div>
     </header>

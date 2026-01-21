@@ -5,7 +5,7 @@
         <div class="legend flex flex-col gap-3 mt-9">
             <div v-for="(item, index) in legendItems" :key="index" class="flex items-center gap-3"
                 @mouseover="highlightSlice(index)" @mouseleave="resetHighlight(index)">
-                <img :src="`/third/chart/${index + 1}.svg`" />
+                <img loading="lazy" :src="`/third/chart/${index + 1}.svg`" />
                 <p class="flex-1 text-[#D1EDAA] text-[20px] font-medium cursor-pointer">{{ item.name }}</p>
                 <p class="font-bold text-[20px]" :style="{ color: item.color }">{{ item.value }}%</p>
             </div>

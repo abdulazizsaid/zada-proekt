@@ -5,19 +5,19 @@
 
             <div class="brands1">
                 <div class="brand" v-for="brands in brands">
-                    <img :src="brands" height="60" alt="flag" />
+                    <img loading="lazy" :src="brands" height="60" alt="flag" />
                 </div>
             </div>
 
             <div class="brands2">
                 <div class="brand" v-for="brands in brands">
-                    <img :src="brands" height="60" alt="flag" />
+                    <img loading="lazy" :src="brands" height="60" alt="flag" />
                 </div>
             </div>
 
             <div class="brands3">
                 <div class="brand" v-for="brands in brands">
-                    <img :src="brands" height="60" alt="flag" />
+                    <img loading="lazy" :src="brands" height="60" alt="flag" />
                 </div>
             </div>
 

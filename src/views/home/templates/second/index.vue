@@ -28,7 +28,7 @@
                             <h2 class="title3 whitespace-nowrap">Number <br> of Exporters</h2>
                             <p class="text-[48px] mt-6 leading-[60px] text-[#7DBA28] font-bold">800</p>
                         </div>
-                        <img class="w-[139.35px] h-[167px]"
+                        <img loading="lazy" class="w-[139.35px] h-[167px]"
                             src="@/assets/icons/second/globe.svg" alt="">
 
                     </div>
@@ -53,7 +53,7 @@
                     <div class="w-full bg-[#151F07] rounded-[40px] p-8 !pt-[26px] !pb-[36px] box blur-green lt-blur-green">
                         <div class="flex justify-between">
                             <div>
-                                <img class="w-[122px] h-[136px] mb-6" src="@/assets/icons/second/lines.svg" alt="">
+                                <img loading="lazy" class="w-[122px] h-[136px] mb-6" src="@/assets/icons/second/lines.svg" alt="">
                                 <h2 class="title3">Export Directions</h2>
                                 <p class="text-[48px] text-[#7DBA28] leading-[60px] font-bold">75</p>
                             </div>
@@ -68,7 +68,7 @@
                     </h2>
                 </div>
                 <div class="flex flex-wrap w-full gap-18 justify-between pr-20">
-                    <img v-for="(item, index) in imgs" :key="index" :src="item" alt="">
+                    <img loading="lazy" v-for="(item, index) in imgs" :key="index" :src="item" alt="">
                 </div>
             </div>
         </div>
