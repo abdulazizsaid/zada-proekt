@@ -9,23 +9,20 @@
                         <h2 class="title2">Support Programs</h2>
                         <div class="grid grid-cols-3 gap-8 mt-12 whitespace-nowrap">
                             <div>
-                                <!-- <img loading="lazy" src="@/assets/icons/fourth/localtoglobal.svg" alt=""> -->
-                                <Localtoglobal />
+                                <img loading="lazy" src="@/assets/icons/fourth/localtoglobal.png" alt="">
                                 <p class="title3 my-4 whitespace-nowrap">Local to Global</p>
                                 <p class="p_info fs18">Export accelerator, <br /> international mentorship, <br />
                                     marketing
                                     support.</p>
                             </div>
                             <div>
-                                <img loading="lazy" src="@/assets/icons/fourth/zerorisk.svg" alt="">
-                                <!-- <Zerorizk /> -->
+                                <img loading="lazy" class="-mb-10 -mt-7 -ml-24" src="@/assets/icons/fourth/zerorisk.png" alt="">
                                 <p class="title3 my-4 whitespace-nowrap">Zero Risk</p>
                                 <p class="p_info fs18">Free offices and equipment <br /> for up to 12 months, <br />
                                     reimbursement of hiring <br /> and training costs.</p>
                             </div>
                             <div>
-                                <img loading="lazy" src="@/assets/icons/fourth/softlanding.svg" alt="">
-                                <!-- <Softlanding /> -->
+                                <img loading="lazy" class="-mb-10 -mt-7 -ml-24" src="@/assets/icons/fourth/softlanding.png" alt="">
                                 <p class="title3 my-4 whitespace-nowrap">Soft Landing</p>
                                 <p class="p_info fs18">Assistance in launching <br /> and adapting a business <br /> in
                                     Uzbekistan.</p>
@@ -37,24 +34,21 @@
                             <div class="w-[425px]">
                                 <h2 class="title2">One-Stop Shop</h2>
                                 <p class="p_info">Turnkey service for opening <br /> a company in Uzbekistan.</p>
-                                <img loading="lazy" class="sm absolute bottom-0 left-0"
-                                    src="@/assets/icons/fourth/oss.svg" alt="">
+                                <img loading="lazy" class="sm absolute bottom-0 left-0 w-100"
+                                    src="@/assets/icons/fourth/oss.png" alt="">
                                 <!-- <Oss /> -->
                             </div>
                             <ul class="space-y-[64px]">
                                 <li class="flex gap-3 items-center">
-                                    <!-- <img loading="lazy" src="@/assets/icons/fourth/registration.svg" alt=""> -->
-                                    <Register />
+                                    <img loading="lazy" src="@/assets/icons/fourth/registration.png" alt="">
                                     <p class="p_info fs18 !mt-0">Company registration, tax ID, <br /> bank accounts.</p>
                                 </li>
                                 <li class="flex gap-3 items-center">
-                                    <!-- <img loading="lazy" src="@/assets/icons/fourth/support.svg" alt=""> -->
-                                    <Support />
+                                    <img loading="lazy" src="@/assets/icons/fourth/support.png" alt="">
                                     <p class="p_info fs18 !mt-0">Legal, tax, and banking <br /> support.</p>
                                 </li>
                                 <li class="flex gap-3 items-center">
-                                    <!-- <img loading="lazy" src="@/assets/icons/fourth/assistance.svg" alt=""> -->
-                                    <Assistance />
+                                    <img loading="lazy" src="@/assets/icons/fourth/assistance.png" alt="">
                                     <p class="p_info fs18 !mt-0">Recruitment <br /> assistance.</p>
                                 </li>
                             </ul>
@@ -64,20 +58,20 @@
                         <h2 class="title2">IT Visa</h2>
                         <p class="p_info">Long-term visa for IT professionals, founders, and investors <br />
                             with full access to live, work, and invest in Uzbekistan.</p>
-                        <img loading="lazy" class="sm absolute top-5 right-5" src="@/assets/icons/fourth/itvisa.svg" alt="">
+                        <img loading="lazy" class="sm absolute -top-20 -right-60 w-180" src="@/assets/icons/fourth/itvisa.png" alt="">
                         <div class="grid grid-cols-3 mt-20">
                             <div>
-                                <img loading="lazy" src="@/assets/icons/fourth/validforup.svg" alt="">
+                                <img loading="lazy" class="w-32 -ml-7 -mb-7 -mt-5" src="@/assets/icons/fourth/validforup.png" alt="">
                                 <!-- <Validforup /> -->
                                 <p class="p_info fs18 !mt-3">Valid for up to 3 years, <br /> renewable without exit</p>
                             </div>
                             <div>
-                                <img loading="lazy" src="@/assets/icons/fourth/healthcare.svg" alt="">
+                                <img loading="lazy" class="w-32 -ml-7 -mb-7 -mt-5" src="@/assets/icons/fourth/healthcare.png" alt="">
                                 <!-- <Healthcare /> -->
                                 <p class="p_info fs18 !mt-3">Access to healthcare <br /> and education services</p>
                             </div>
                             <div>
-                                <img loading="lazy" src="@/assets/icons/fourth/purchase.svg" alt="">
+                                <img loading="lazy" class="w-32 -ml-7 -mb-7 -mt-5" src="@/assets/icons/fourth/purchase.png" alt="">
                                 <!-- <Purchase /> -->
                                 <p class="p_info fs18 !mt-3">Opportunity to purchase <br /> real estate</p>
                             </div>
@@ -87,7 +81,7 @@
                         <div class="flex">
                             <div class="w-[420px]">
                                 <h2 class="title2">Infrastructure</h2>
-                                <img loading="lazy" class="sm absolute bottom-0 left-0" src="@/assets/icons/fourth/infrastructure.svg"
+                                <img loading="lazy" class="sm absolute bottom-0 -left-10 w-132" src="@/assets/icons/fourth/infrastructure.png"
                                     alt="">
                                 <!-- <InfroStructure class="sm absolute bottom-0 left-0" /> -->
                             </div>
@@ -115,22 +109,9 @@
 
 <script setup>
 import Header from '@/shared/components/templates/header/index.vue'
-import Localtoglobal from './icons/Localtoglobal.vue';
-import Zerorizk from './icons/Zerorizk.vue';
-import Softlanding from './icons/Softlanding.vue';
-import Oss from './icons/Oss.vue';
-import Register from './icons/Register.vue';
-import Support from './icons/Support.vue';
-import Assistance from './icons/Assistance.vue';
-import Validforup from './icons/Validforup.vue';
-import Healthcare from './icons/Healthcare.vue';
-import Purchase from './icons/Purchase.vue';
-import InfroStructure from './icons/InfroStructure.vue';
 </script>
 
 <style lang="scss" scoped>
-// .dashboard {}
-
 .box {
     position: relative;
     background: #151F07;

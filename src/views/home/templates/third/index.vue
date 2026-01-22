@@ -6,12 +6,12 @@
             <div class="w-full space-y-[32px]">
                 <section class="grid grid-cols-8 w-full space-x-[32px] whitespace-nowrap">
                     <div class="box !pt-[26px] col-span-2 blur-green lt-blur-green">
-                        <img loading="lazy" class="h-[140px] mb-3" src="@/assets/icons/third/world_rate.svg" alt="">
+                        <img loading="lazy" class="h-[140px] mb-3" src="@/assets/icons/third/world_rate.png" alt="">
                         <p class="num_info">#2</p>
                         <p class="p_info">In the world <br /> by growth rate</p>
                     </div>
                     <div class="box col-span-2 !pt-[26px] blur-green lt-blur-green">
-                        <img loading="lazy" class="h-[140px] mb-2" src="@/assets/icons/third/ecosystem.svg" alt="">
+                        <img loading="lazy" class="h-[140px] mb-2" src="@/assets/icons/third/ecosystem.png" alt="">
                         <p class="num_info">$1.2B</p>
                         <p class="p_info">Evaluation of startup <br /> ecosystem</p>
                     </div>
@@ -21,7 +21,7 @@
                             <p class="p_info fs20 mr-8">Startups participated in local <br /> acceleration programs</p>
                         </div>
                         <div class="box blur-sm-green rt-sm-blur-green relative">
-                            <img loading="lazy" class="sm absolute top-5 right-5" src="@/assets/icons/third/competition.svg" alt="">
+                            <img loading="lazy" class="sm absolute -top-5 -right-5 h-40" src="@/assets/icons/third/competition.png" alt="">
                             <p class="num_info">$1M</p>
                             <p class="p_info fs20">Largest startup <br /> competition prize fund</p>
                         </div>
@@ -30,7 +30,7 @@
                             <p class="p_info fs20">Inbound startup expansion</p>
                         </div>
                         <div class="box blur-sm-green rb-sm-blur-green relative">
-                            <img loading="lazy" class="absolute bottom-5 right-5" src="@/assets/icons/third/studios.svg" alt="">
+                            <img loading="lazy" class="absolute -bottom-1 -right-1 h-32" src="@/assets/icons/third/studios.png" alt="">
                             <p class="num_info">15</p>
                             <p class="p_info fs20">Startup studios</p>
                         </div>
@@ -48,26 +48,26 @@
                     </div>
                     <div class="box box_group grid4 w-full">
                         <div class="inside_box blur-sm-green rb-sm-blur-green relative">
-                            <img loading="lazy" class="absolute bottom-3 right-5" src="@/assets/icons/third/investments.svg" alt="">
+                            <img loading="lazy" class="absolute bottom-3 right-5 w-40" src="@/assets/icons/third/investments.png" alt="">
                             <p class="num_info">$260M+</p>
                             <p class="p_info fs20">Venture investments in <br /> <span class="primarygreen">52
                                     startups</span> in 2025</p>
                         </div>
                         <div class="inside_box blur-sm-green rb-sm-blur-green relative">
-                            <img loading="lazy" class="absolute bottom-3 right-5" src="@/assets/icons/third/localfund.svg" alt="">
+                            <img loading="lazy" class="absolute bottom-3 right-5 w-40" src="@/assets/icons/third/localfund.png" alt="">
                             <p class="num_info">$160M+</p>
                             <p class="p_info fs20">Joint venture capital <br /> of local funds</p>
                         </div>
                         <div class="inside_box blur-sm-green rb-sm-blur-green relative">
-                            <img loading="lazy" class="absolute bottom-3 right-5" src="@/assets/icons/third/unicorns.svg" alt="">
+                            <img loading="lazy" class="absolute -bottom-8 -right-8 w-64" src="@/assets/icons/third/unicorns.png" alt="">
                             <p class="num_info">2 unicorns</p>
                             <p class="p_info flex gap-4">
-                                <img loading="lazy" src="@/assets/icons/third/uzum.svg" alt="">
-                                <img loading="lazy" src="@/assets/icons/third/tbc.svg" alt="">
+                                <img loading="lazy" src="@/assets/icons/third/uzum.png" alt="">
+                                <img loading="lazy" src="@/assets/icons/third/tbc.png" alt="">
                             </p>
                         </div>
                         <div class="inside_box blur-sm-green rb-sm-blur-green relative">
-                            <img loading="lazy" class="absolute bottom-3 right-5" src="@/assets/icons/third/startups.svg" alt="">
+                            <img loading="lazy" class="absolute -bottom-8 -right-5 w-64" src="@/assets/icons/third/startups.png" alt="">
                             <p class="num_info">600+</p>
                             <p class="p_info fs20">Startups</p>
                         </div>

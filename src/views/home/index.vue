@@ -8,12 +8,12 @@
         </Transition>
 
         <!-- preload all components -->
-         <template v-show="false">
+         <!-- <template v-show="false">
             <First />
             <Second />
             <Third />
             <Fourth />
-         </template>
+         </template> -->
     </div>
 </template>
 
@@ -35,7 +35,7 @@ let interval;
 onMounted(() => {
     interval = setInterval(() => {
         currentIndex.value = (currentIndex.value + 1) % components.length;
-    }, 30000); // har 7 sekundda almashadi
+    }, 6000); // har 7 sekundda almashadi
 });
 
 onBeforeUnmount(() => {

@@ -29,7 +29,7 @@
                             <p class="text-[48px] mt-6 leading-[60px] text-[#7DBA28] font-bold">800</p>
                         </div>
                         <img loading="lazy" class="w-[139.35px] h-[167px]"
-                            src="@/assets/icons/second/globe.svg" alt="">
+                            src="@/assets/icons/second/globe.png" alt="">
 
                     </div>
                     <Linechart :data="[
@@ -53,7 +53,7 @@
                     <div class="w-full bg-[#151F07] rounded-[40px] p-8 !pt-[26px] !pb-[36px] box blur-green lt-blur-green">
                         <div class="flex justify-between">
                             <div>
-                                <img loading="lazy" class="w-[122px] h-[136px] mb-6" src="@/assets/icons/second/lines.svg" alt="">
+                                <img loading="lazy" class="w-[122px] h-[136px] mb-6" src="@/assets/icons/second/lines.png" alt="">
                                 <h2 class="title3">Export Directions</h2>
                                 <p class="text-[48px] text-[#7DBA28] leading-[60px] font-bold">75</p>
                             </div>
@@ -68,7 +68,7 @@
                     </h2>
                 </div>
                 <div class="flex flex-wrap w-full gap-18 justify-between pr-20">
-                    <img loading="lazy" v-for="(item, index) in imgs" :key="index" :src="item" alt="">
+                    <img height="20" class="h-8" loading="lazy" v-for="(item, index) in imgs" :key="index" :src="item" alt="">
                 </div>
             </div>
         </div>
@@ -90,14 +90,14 @@ const regions = [
 ];
 
 const imgs = ref([
-    new URL('@/assets/icons/second/itransition.svg', import.meta.url).href,
-    new URL('@/assets/icons/second/dyninno.svg', import.meta.url).href,
-    new URL('@/assets/icons/second/datavolt.svg', import.meta.url).href,
-    new URL('@/assets/icons/second/exadel.svg', import.meta.url).href,
-    new URL('@/assets/icons/second/epam.svg', import.meta.url).href,
-    new URL('@/assets/icons/second/vention.svg', import.meta.url).href,
-    new URL('@/assets/icons/second/eastgames.svg', import.meta.url).href,
-    new URL('@/assets/icons/second/wizard.svg', import.meta.url).href,
+    new URL('@/assets/icons/second/itransition.png', import.meta.url).href,
+    new URL('@/assets/icons/second/dyninno.png', import.meta.url).href,
+    new URL('@/assets/icons/second/datavolt.png', import.meta.url).href,
+    new URL('@/assets/icons/second/exadel.png', import.meta.url).href,
+    new URL('@/assets/icons/second/epam.png', import.meta.url).href,
+    new URL('@/assets/icons/second/vention.png', import.meta.url).href,
+    new URL('@/assets/icons/second/eastgames.png', import.meta.url).href,
+    new URL('@/assets/icons/second/wizard.png', import.meta.url).href,
 ])
 
 </script>
