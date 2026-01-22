@@ -1,12 +1,12 @@
 <template>
   <!-- start #mainWrap-->
-  <div id="mainWrap" class="bg-[#010200]">
+  <main id="mainWrap" class="bg-[#010200]">
     <div class="mx-auto innitialed-cont">
       <div class="w-full p-8 ">
         <router-view />
       </div>
     </div>
-  </div>
+  </main>
 </template>
 
 <script setup></script>
