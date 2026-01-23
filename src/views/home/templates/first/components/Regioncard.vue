@@ -11,7 +11,7 @@
         <span class="num_info">118</span>
       </li>
       <li class="flex justify-between items-center text-[#7DBA28]">
-        <span class="title3">America</span>
+        <span class="title3">North America</span>
         <span class="num_info">93</span>
       </li>
       <li class="flex justify-between items-center text-[#7DBA28]">
