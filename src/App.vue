@@ -1,5 +1,5 @@
 <template>
-  <router-view />
+  <!-- Go go go -->
 </template>
 
 <style scoped></style>
