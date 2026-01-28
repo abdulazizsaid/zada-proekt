@@ -1,8 +1,8 @@
 import { createApp } from 'vue'
-import './style.css'
+// import './style.css'
 import App from './App.vue'
-import router from './router';
-import  store  from './store';
+// import router from './router';
+// import  store  from './store';
 import HighchartsVue from "highcharts-vue";
 
 const app = createApp(App);
